@@ -20,7 +20,7 @@
 (setq cider-prompt-save-file-on-load nil)
 
 ; Change the result prefix for REPL evaluation (by default there's no prefix):
-;(setq cider-repl-result-prefix ";; => ")
+(setq cider-repl-result-prefix ";; => ")
 
 ; enable company mode in cider
 (add-hook 'cider-repl-mode-hook #'company-mode)

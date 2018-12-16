@@ -6,6 +6,9 @@
         ace-jump-mode
         ace-window             ; jump to other frame in emacs
         browse-kill-ring
+        cider
+        clojure-mode
+        company
         emmet-mode
         esup                   ; startup profiling
         flycheck
@@ -15,6 +18,7 @@
         monokai-theme
         move-text              ; move text lines up down
         multiple-cursors
+        paredit
         rainbow-mode
         yasnippet ))
 
@@ -37,5 +41,7 @@
 
 (require 'key-chord)
 (require 'multiple-cursors)
+(require 'clojure-setup)
+(global-company-mode)
 
 (provide 'packages-setup)
