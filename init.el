@@ -23,8 +23,14 @@
 (require 'custom-functions)
 (require 'sane-defaults)
 (require 'machine-specific-settings)
-(require 'org-mode-setup)
 
+(after 'org-mode
+  (require 'org-mode-setup))
+
+(after 'clojure-mode
+  (require 'clojure-setup))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

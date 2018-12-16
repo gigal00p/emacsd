@@ -41,7 +41,6 @@
 
 (require 'key-chord)
 (require 'multiple-cursors)
-(require 'clojure-setup)
 (global-company-mode)
 
 (provide 'packages-setup)
