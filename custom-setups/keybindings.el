@@ -49,7 +49,7 @@
 
 
 ; magit shortcuts
-(defalias 'ml 'magit-log)
+(defalias 'ml 'magit-log-all)
 (defalias 'ms 'magit-status)
 (defalias 'mc 'magit-commit)
 (defalias 'md 'magit-diff)
