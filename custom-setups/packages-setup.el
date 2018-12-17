@@ -20,6 +20,7 @@
         multiple-cursors
         paredit
         rainbow-mode
+        solarized-theme
         yasnippet ))
 
 (defun cfg:install-packages ()
