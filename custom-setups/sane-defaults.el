@@ -4,6 +4,9 @@
 ;; Allow pasting selection outside of Emacs
 (setq select-enable-clipboard t)
 
+; disable bell
+(setq visible-bell 1)
+
 ;; Auto refresh buffers
 (global-auto-revert-mode 1)
 
