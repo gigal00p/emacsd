@@ -189,48 +189,6 @@
              (set-window-start w2 s1)
 	     (setq i (1+ i)))))))
 
-(defun ido-imenu ()
-  "Update the imenu index and then use ido to select a symbol to navigate to.
-Symbols matching the text at point are put first in the completion list."
-  (interactive)
-  (imenu--make-index-alist)
-  (let ((name-and-pos '())
-        (symbol-names '()))
-    (flet ((addsymbols (symbol-list)
-                       (when (listp symbol-list)
-                         (dolist (symbol symbol-list)
-                           (let ((name nil) (position nil))
-                             (cond
-                              ((and (listp symbol) (imenu--subalist-p symbol))
-                               (addsymbols symbol))
-
-                              ((listp symbol)
-                               (setq name (car symbol))
-                               (setq position (cdr symbol)))
-
-                              ((stringp symbol)
-                               (setq name symbol)
-                               (setq position (get-text-property 1 'org-imenu-marker symbol))))
-
-                             (unless (or (null position) (null name))
-                               (add-to-list 'symbol-names name)
-                               (add-to-list 'name-and-pos (cons name position))))))))
-      (addsymbols imenu--index-alist))
-    ;; If there are matching symbols at point, put them at the beginning of `symbol-names'.
-    (let ((symbol-at-point (thing-at-point 'symbol)))
-      (when symbol-at-point
-        (let* ((regexp (concat (regexp-quote symbol-at-point) "$"))
-               (matching-symbols (delq nil (mapcar (lambda (symbol)
-                                                     (if (string-match regexp symbol) symbol))
-                                                   symbol-names))))
-          (when matching-symbols
-            (sort matching-symbols (lambda (a b) (> (length a) (length b))))
-            (mapc (lambda (symbol) (setq symbol-names (cons symbol (delete symbol symbol-names))))
-                  matching-symbols)))))
-    (let* ((selected-symbol (ido-completing-read "Symbol? " symbol-names))
-           (position (cdr (assoc selected-symbol name-and-pos))))
-      (goto-char position))))
-
 (defun kfwz-hl-line-black ()
   (interactive)
   (set-face-background 'hl-line "#000000"))
@@ -412,7 +370,7 @@ Version 2015-06-12"
     (funcall (and initial-major-mode))
     (setq buffer-offer-save t)))
 
-(defun kfwz/org-agenda-to-appt ()
+(defun kfwz-org-agenda-to-appt ()
   (interactive)
   (setq appt-time-msg-list nil)
   (org-agenda-to-appt))
@@ -422,17 +380,6 @@ Version 2015-06-12"
   (interactive)
   (cd (file-name-directory buffer-file-name))
   (compile "find . -iname \"*.p[lm]\" -print | etags -"))
-
-(defun kfwz-ielm-auto-complete ()
-  "Enables `auto-complete' support in \\[ielm]."
-  (setq ac-sources '(ac-source-functions
-                     ac-source-variables
-                     ac-source-features
-                     ac-source-symbols
-                     ac-source-words-in-same-mode-buffers))
-  (add-to-list 'ac-modes 'inferior-emacs-lisp-mode)
-  (auto-complete-mode 1))
-(add-hook 'ielm-mode-hook 'ielm-auto-complete)
 
 (defun no-junk-please-were-unixish ()
   (let ((coding-str (symbol-name buffer-file-coding-system)))
