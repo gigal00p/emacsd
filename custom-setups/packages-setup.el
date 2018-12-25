@@ -8,6 +8,7 @@
         browse-kill-ring
         cider
         clojure-mode
+        clojure-snippets
         company
         emmet-mode
         esup                   ; startup profiling
