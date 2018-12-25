@@ -22,14 +22,4 @@
   (define-key perl-mode-map (kbd "<f5>") 'perltidy-buffer)
   )
 
-
-;(add-hook 'perl-mode-hook (lambda ()
-;			     (flycheck-mode t)))
-
-
-(auto-complete-mode t)
-(make-variable-buffer-local 'ac-sources)
-(setq ac-sources
-      '(ac-source-perl-completion))
-
 (provide 'perl-setup)
