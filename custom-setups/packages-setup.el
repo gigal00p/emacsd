@@ -19,9 +19,9 @@
         move-text              ; move text lines up down
         multiple-cursors
         paredit
-        rainbow-mode
+        rainbow-delimiters
         solarized-theme
-	slime
+        slime
         yasnippet ))
 
 (defun cfg:install-packages ()
