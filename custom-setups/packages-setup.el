@@ -14,6 +14,7 @@
         esup                   ; startup profiling
         flycheck
         helm
+        helm-descbinds
         key-chord
         magit
         monokai-theme
