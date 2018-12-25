@@ -21,6 +21,7 @@
         paredit
         rainbow-mode
         solarized-theme
+	slime
         yasnippet ))
 
 (defun cfg:install-packages ()
