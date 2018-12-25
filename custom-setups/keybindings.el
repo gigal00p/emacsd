@@ -15,8 +15,8 @@
 ;;; resize windows ;;;
 (global-set-key (kbd "S-C-<right>") 'shrink-window-horizontally)
 (global-set-key (kbd "S-C-<left>") 'enlarge-window-horizontally)
-(global-set-key (kbd "S-C-<down>") 'shrink-window)
-(global-set-key (kbd "S-C-<up>") 'enlarge-window)
+(global-set-key (kbd "S-C-<down>") 'enlarge-window)
+(global-set-key (kbd "S-C-<up>") 'shrink-window)
 
 ; Repeat last action
 (global-set-key [(control .)] 'repeat)
