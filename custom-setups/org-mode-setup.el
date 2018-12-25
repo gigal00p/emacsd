@@ -1,20 +1,21 @@
 (setq org-todo-keywords
       (quote ((sequence "TODO(t)" "NEXT(n)" "STARTED(s)" "|" "DONE(d)")
-	      (sequence "FEEDBACK(f)" "FINDOUT(o)" "VERIFY(v)" "|" "DONE(d)")
+              (sequence "FEEDBACK(b)" "FINDOUT(o)" "VERIFY(v)" "|" "DONE(d)")
+              (sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
               (sequence "WAITING(w@/!)" "HOLD(h@/!)" "|" "CANCELLED(c@/!)" "DONE(d)")
-	      )))
+              )))
 
 (setq org-todo-keyword-faces
       (quote (("TODO" :foreground "red" :weight bold)
               ("NEXT" :foreground "DeepSkyBlue1" :weight bold)
+              ("STARTED" :foreground "yellow" :weight bold)
               ("DONE" :foreground "forest green" :weight bold)
+              ("FEEDBACK" :foreground "dark goldenrod" :weight bold)
               ("WAITING" :foreground "orange" :weight bold)
               ("HOLD" :foreground "magenta" :weight bold)
               ("CANCELLED" :foreground "forest green" :weight bold)
-	      ("FEEDBACK" :foreground "dark goldenrod" :weight bold)
-	      ("VERIFY" :foreground "DeepPink1" :weight bold)
-	      ("STARTED" :foreground "yellow" :weight bold)
-	      )))
+              ("VERIFY" :foreground "DeepPink1" :weight bold)
+              )))
 
 
 (org-babel-do-load-languages
@@ -52,22 +53,22 @@
        (setq org-default-notes-file (concat (getenv "KWORGHOME") "/notes.org"))
 
        (setq org-agenda-files (list
-			       (concat (getenv "KWORGHOME") "/tasks.org")
-			       (concat (getenv "KWORGHOME") "/notes.org")
-			       (concat (getenv "KWORGHOME") "/tickets.org")
-			       (concat (getenv "KWORGHOME") "/incidents/incidents.org")
-			       (concat (getenv "KWORGHOME") "/incidents/incidents.org")
-			       "/home/kwalkiewicz/Sync/WORK/org/installs.org"
-			       "/home/kwalkiewicz/Sync/WORK/org/knowledgebase.org"
-			       "/home/kwalkiewicz/Sync/WORK/org/to_learn.org"
-			       "/home/kwalkiewicz/Documents/org_projects/howtos.org"
-			       ))
+                               (concat (getenv "KWORGHOME") "/tasks.org")
+                               (concat (getenv "KWORGHOME") "/notes.org")
+                               (concat (getenv "KWORGHOME") "/tickets.org")
+                               (concat (getenv "KWORGHOME") "/incidents/incidents.org")
+                               (concat (getenv "KWORGHOME") "/incidents/incidents.org")
+                               "/home/kwalkiewicz/Sync/WORK/org/installs.org"
+                               "/home/kwalkiewicz/Sync/WORK/org/knowledgebase.org"
+                               "/home/kwalkiewicz/Sync/WORK/org/to_learn.org"
+                               "/home/kwalkiewicz/Documents/org_projects/howtos.org"
+                               ))
        
        (setq org-capture-templates
-	     '(("k" "Various TODO's" entry
-		(file+headline (concat (getenv "KWORGHOME") "/tasks.org") "Uncategorized TODO entries")
-		"\n\n** TODO %?\n   SCHEDULED: %t" 
-		:empty-lines 1)))))
+             '(("k" "Various TODO's" entry
+                (file+headline (concat (getenv "KWORGHOME") "/tasks.org") "Uncategorized TODO entries")
+                "\n\n** TODO %?\n   SCHEDULED: %t" 
+                :empty-lines 1)))))
 
 (setq org-agenda-restore-windows-after-quit t)
 
@@ -92,7 +93,7 @@
 (add-hook 'org-finalize-agenda-hook 'kfwz/org-agenda-to-appt 'append)
 
 (setq system-time-locale "C")         ; Make sure that the weekdays in the
-					; time stamps of your Org mode files and
-					; in the agenda appear in English.
+                                        ; time stamps of your Org mode files and
+                                        ; in the agenda appear in English.
 
 (provide 'org-mode-setup)
