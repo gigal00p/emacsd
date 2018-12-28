@@ -22,6 +22,10 @@
 ; Change the result prefix for REPL evaluation (by default there's no prefix):
 (setq cider-repl-result-prefix ";; => ")
 
+(setq cider-repl-wrap-history t)
+(setq cider-repl-history-size 1000)
+(setq cider-repl-history-file "~/.cider-repl-history")
+
 ; enable company mode in cider
 (add-hook 'cider-repl-mode-hook #'company-mode)
 (add-hook 'cider-mode-hook #'company-mode)

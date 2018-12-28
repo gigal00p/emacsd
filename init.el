@@ -31,4 +31,6 @@
 (after 'lisp-mode
   (require 'cl-setup))
 
+(require 'helm-descbinds)
+(helm-descbinds-mode)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
