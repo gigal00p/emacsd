@@ -1,5 +1,5 @@
 (cond (
-       (string= (system-name) "DESKTOP-SP63KME" )
+       (string= (system-name) "vz279932" )
 
        ;; System locale to use for formatting time values.
        (setq system-time-locale "C")    ; Make sure that the weekdays in the
