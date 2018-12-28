@@ -3,13 +3,10 @@
 (setq column-number-mode t)
 (setq line-number-mode t)
 
-; dezaktywuje toolbar in gui
-(tool-bar-mode 0)
-;dezaktuwyje menubar in gui
+;; disabling meny bar in tui
 (menu-bar-mode 0)
-;;; dezaktywuje scroll-bar
-(scroll-bar-mode 0)
-;;; matchowanie nawiasow
+
+;;; parens matching
 (show-paren-mode 1)
 ;;; No splash screen please ... jeez
 (setq inhibit-startup-message t)
