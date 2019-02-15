@@ -31,6 +31,9 @@
 (after 'lisp-mode
   (require 'cl-setup))
 
+(after 'python-mode
+  (require 'python-setup))
+
 (require 'helm-descbinds)
 (helm-descbinds-mode)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
