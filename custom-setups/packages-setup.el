@@ -5,14 +5,19 @@
       '(ace-jump-buffer
         ace-jump-mode
         ace-window             ; jump to other frame in emacs
+	auto-complete
         browse-kill-ring
         cider
         clojure-mode
         clojure-snippets
         company
+	elpy
         emmet-mode
         esup                   ; startup profiling
+	exec-path-from-shell
         flycheck
+	go-mode
+	go-autocomplete
         helm
         helm-descbinds
         key-chord
