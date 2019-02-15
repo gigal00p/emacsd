@@ -34,6 +34,12 @@
 (after 'python-mode
   (require 'python-setup))
 
+(after 'go-mode
+  (require 'golang-setup))
+
 (require 'helm-descbinds)
 (helm-descbinds-mode)
+
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
