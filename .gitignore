@@ -20,3 +20,5 @@ desktop-sessions/last-session/.emacs.desktop
 *.html
 elpa/*
 network-security.data
+.DS_Store
+bookmarks
