@@ -1,6 +1,5 @@
 (cond (
        (string= (system-name) "fanless" )
-
        ;; System locale to use for formatting time values.
        (setq system-time-locale "C")    ; Make sure that the weekdays in the
 					; time stamps of your Org mode files and

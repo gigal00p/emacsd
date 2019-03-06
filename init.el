@@ -31,6 +31,12 @@
 (after 'lisp-mode
   (require 'cl-setup))
 
+(after 'python-mode
+  (require 'python-setup))
+
+(after 'go-mode
+  (require 'golang-setup))
+
 (require 'helm-descbinds)
 (helm-descbinds-mode)
 
@@ -43,4 +49,7 @@
   ("thefreedictionary\\.com" . eww-browse-url)
   ("." . browse-url-default-browser)
   ))
+
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
