@@ -29,9 +29,7 @@
    (perl . t)
    (calc .t)
    (R . t)
-   (emacs-lisp . t)
-   ))
-
+   (emacs-lisp . t)))
 
 ;Do not prompt to confirm evaluation
 ; This may be dangerous - make sure you understand the consequences
@@ -42,33 +40,26 @@
 ;(add-to-list 'org-src-lang-modes (quote ("plantuml" . fundamental)))
 (setq org-agenda-span 14)
 
-(cond (
-       (string= (system-name) "DESKTOP-SP63KME" )
-       (setenv "KWORGHOME" "C:\\Users\\krzysztof\\Documents\\org_projects")
-       )
+(cond ((string= (system-name) "DESKTOP-SP63KME")
+       (setenv "KWORGHOME" "C:\\Users\\krzysztof\\Documents\\org_projects"))
+      ((string= (system-name) "walkiewk-2EFFT0")
+       (setenv "KWORGHOME" "/Users/walkiewk/Documents/org")))
 
-      ((string= (system-name) "POZDL0135" )
-       (setenv "KWORGHOME" "/home/kwalkiewicz/Documents/org_projects")
 
-       (setq org-default-notes-file (concat (getenv "KWORGHOME") "/notes.org"))
+; (setenv "KWORGHOME" "/Users/walkiewk/Documents/org")
 
-       (setq org-agenda-files (list
-                               (concat (getenv "KWORGHOME") "/tasks.org")
-                               (concat (getenv "KWORGHOME") "/notes.org")
-                               (concat (getenv "KWORGHOME") "/tickets.org")
-                               (concat (getenv "KWORGHOME") "/incidents/incidents.org")
-                               (concat (getenv "KWORGHOME") "/incidents/incidents.org")
-                               "/home/kwalkiewicz/Sync/WORK/org/installs.org"
-                               "/home/kwalkiewicz/Sync/WORK/org/knowledgebase.org"
-                               "/home/kwalkiewicz/Sync/WORK/org/to_learn.org"
-                               "/home/kwalkiewicz/Documents/org_projects/howtos.org"
-                               ))
-       
-       (setq org-capture-templates
-             '(("k" "Various TODO's" entry
-                (file+headline (concat (getenv "KWORGHOME") "/tasks.org") "Uncategorized TODO entries")
-                "\n\n** TODO %?\n   SCHEDULED: %t" 
-                :empty-lines 1)))))
+(setq org-default-notes-file (concat (getenv "KWORGHOME") "/notki.org"))
+
+(setq org-agenda-files
+      (list
+       (concat (getenv "KWORGHOME") "/notki.org")
+       (concat (getenv "KWORGHOME") "/tasks.org")))
+
+(setq org-capture-templates
+      '(("k" "Various TODO's" entry
+         (file+headline (concat (getenv "KWORGHOME") "/tasks.org") "Uncategorized TODO entries")
+         "\n\n** TODO %?\n   SCHEDULED: %t" 
+         :empty-lines 1)))
 
 (setq org-agenda-restore-windows-after-quit t)
 
@@ -90,10 +81,8 @@
 ; Fonts in src blocks in babel
 (setq org-src-fontify-natively t)
 
-(add-hook 'org-finalize-agenda-hook 'kfwz/org-agenda-to-appt 'append)
+;(add-hook 'org-finalize-agenda-hook 'kfwz/org-agenda-to-appt 'append)
 
-(setq system-time-locale "C")         ; Make sure that the weekdays in the
-                                        ; time stamps of your Org mode files and
-                                        ; in the agenda appear in English.
+(setq system-time-locale "C")
 
 (provide 'org-mode-setup)
