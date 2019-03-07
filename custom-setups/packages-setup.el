@@ -5,21 +5,22 @@
       '(ace-jump-buffer
         ace-jump-mode
         ace-window             ; jump to other frame in emacs
-	auto-complete
+        auto-complete
         browse-kill-ring
         cider
         clojure-mode
         clojure-snippets
         company
-	elpy
+        elpy
         emmet-mode
         esup                   ; startup profiling
-	exec-path-from-shell
+        exec-path-from-shell
         flycheck
-	go-mode
-	go-autocomplete
+        go-mode
+        go-autocomplete
         helm
         helm-descbinds
+        htmlize
         key-chord
         magit
         monokai-theme
@@ -30,7 +31,8 @@
         solarized-theme
         slime
         yaml-mode
-        yasnippet ))
+        yasnippet
+        yasnippet-snippets))
 
 (defun cfg:install-packages ()
   (let ((pkgs (remove-if #'package-installed-p cfg-var:packages)))
