@@ -1,6 +1,5 @@
 (cond (
-       (string= (system-name) "walkiewk-2EFFT0" )
-
+       (string= (system-name) "fanless" )
        ;; System locale to use for formatting time values.
        (setq system-time-locale "C")    ; Make sure that the weekdays in the
 					; time stamps of your Org mode files and
@@ -23,7 +22,7 @@
 	;; If you edit it by hand, you could mess it up, so be careful.
 	;; Your init file should contain only one such instance.
 	;; If there is more than one, they won't work right.
-	'(default ((t (:family "Hack" :foundry "unknown" :slant normal :weight normal :height 135 :width normal))))
+	'(default ((t (:family "Monospace" :foundry "unknown" :slant normal :weight normal :height 135 :width normal))))
 	'(hl-line ((t (:underline nil))))))
       )
 

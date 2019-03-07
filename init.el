@@ -40,6 +40,16 @@
 (require 'helm-descbinds)
 (helm-descbinds-mode)
 
+(setq
+ browse-url-browser-function
+ '(
+  ("wikipedia\\.org" . browse-url-firefox)
+  ("github" . browse-url-chrome)
+  ("quicklisp" . browse-url-firefox)
+  ("thefreedictionary\\.com" . eww-browse-url)
+  ("." . browse-url-default-browser)
+  ))
+
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
