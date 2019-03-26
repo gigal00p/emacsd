@@ -43,6 +43,8 @@
 (cond ((string= (system-name) "DESKTOP-SP63KME")
        (setenv "KWORGHOME" "C:\\Users\\krzysztof\\Documents\\org_projects"))
       ((string= (system-name) "walkiewk-2EFFT0")
+       (setenv "KWORGHOME" "/Users/walkiewk/Documents/org"))
+      ((string= (system-name) "walkiewk-04JG5H")
        (setenv "KWORGHOME" "/Users/walkiewk/Documents/org")))
 
 
