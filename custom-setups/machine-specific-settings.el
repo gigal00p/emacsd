@@ -9,7 +9,7 @@
        (custom-set-faces
 	'(default ((t (:family "Monospace" :foundry "unknown" :slant normal :weight normal :height 135 :width normal))))
 	'(hl-line ((t (:underline nil))))))
-      ((string= (system-name) "walkiewk-2EFFT0")
+      ((string= (system-name) "walkiewk-04JG5H")
        (setq system-time-locale "C") ; Make sure that the weekdays in timestamps in org mode appear in English
        (custom-set-variables
 	'(column-number-mode t)
