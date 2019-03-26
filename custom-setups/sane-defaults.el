@@ -41,9 +41,7 @@
 ; IDO
 (ido-mode t)
 
-
 ; Some settings found in `Mastering Emacs`.
-(setq ido-everywhere t)
 (setq ido-enable-flex-matching t)
 
 ; use company mode in all buffers.
