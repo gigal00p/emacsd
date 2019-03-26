@@ -28,6 +28,7 @@
         multiple-cursors
         paredit
         rainbow-delimiters
+        rust-mode
         solarized-theme
         slime
         yaml-mode
