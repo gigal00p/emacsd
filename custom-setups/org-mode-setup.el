@@ -55,6 +55,7 @@
 (setq org-agenda-files
       (list
        (concat (getenv "KWORGHOME") "/notki.org")
+       (concat (getenv "KWORGHOME") "/PHC.org")
        (concat (getenv "KWORGHOME") "/tasks.org")))
 
 (setq org-capture-templates
