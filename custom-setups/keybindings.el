@@ -25,7 +25,6 @@
 (global-set-key (kbd "C-c C-b") 'ido-switch-buffer)
 
 ;Aliases
-; M-x `qrr` instead of `C-M-%`
 (defalias 'qrr 'query-replace-regexp)
 (defalias 'ttl 'toggle-truncate-lines)
 (defalias 'eb 'eval-buffer)
@@ -61,19 +60,17 @@
 (global-set-key (kbd "C-S-c C-e") 'mc/edit-ends-of-lines)
 (global-set-key (kbd "C-S-c C-a") 'mc/edit-beginnings-of-lines)
 
+
 ;; When you want to add multiple cursors not based on continuous
 ;; lines, but based on keywords in the buffer, use:
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
+
 ;; Rectangular region mode
 (global-set-key (kbd "C-q") 'set-rectangular-region-anchor)
 
-;(global-set-key (kbd "C-c <S-M-right>") 'shrink-window-horizontally)
-;(global-set-key (kbd "C-c <S-M-down>") 'shrink-window)
-;(global-set-key (kbd "C-c <S-M-left>") 'enlarge-window-horizontally)
-;(global-set-key (kbd "C-c <S-M-up>") 'enlarge-window)
 
 ;; PROVIDED BY move-text
 (global-set-key [M-up] 'move-text-up)
@@ -83,20 +80,6 @@
 (global-set-key (kbd "M-<f1>") 'kfwz-compile-all-elisp-files)
 (global-set-key (kbd "M-i") 'kfwz-kill-line-up)
 
-
-; This is insane :) Disable completely arrows...
-; (global-unset-key (kbd "<left>"))
-; (global-unset-key (kbd "<right>"))
-; (global-unset-key (kbd "<up>"))
-; (global-unset-key (kbd "<down>"))
-; (global-unset-key (kbd "<C-left>"))
-; (global-unset-key (kbd "<C-right>"))
-; (global-unset-key (kbd "<C-up>"))
-; (global-unset-key (kbd "<C-down>"))
-; (global-unset-key (kbd "<M-left>"))
-; (global-unset-key (kbd "<M-right>"))
-; (global-unset-key (kbd "<M-up>"))
-; (global-unset-key (kbd "<M-down>"))
 
 ;;keep cursor at same position when scrolling
 (setq scroll-preserve-screen-position 1)
@@ -117,11 +100,11 @@
 (define-key global-map "\C-cc" 'org-capture)
 (global-set-key (kbd "M-<f4>") 'save-buffers-kill-terminal)
 
-;(global-set-key (kbd "C-<f8>") 'ispell-region)
+(global-set-key (kbd "C-<f8>") 'ispell-region)
 
 (key-chord-define-global "hh" 'org-html-export-to-html)
 
-;(global-set-key (kbd "C-c C-s") 'rgrep)
+(global-set-key (kbd "C-c C-s") 'rgrep)
 
 (global-set-key (kbd "C-c q") 'dired-toogle-read-only)
 
