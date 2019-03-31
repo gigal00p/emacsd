@@ -41,9 +41,7 @@
 ; IDO
 (ido-mode t)
 
-
 ; Some settings found in `Mastering Emacs`.
-(setq ido-everywhere t)
 (setq ido-enable-flex-matching t)
 
 ; use company mode in all buffers.
@@ -109,8 +107,5 @@
 
 ;; overwrite selected text
 (delete-selection-mode t)
-
-;; Adds newline on C-n
-; (setq next-line-add-newlines t)
 
 (provide 'sane-defaults)
