@@ -21,6 +21,7 @@
 	'(hl-line ((t (:underline nil))))))
       ((string= (system-name) "daemon")
        (setq system-time-locale "C") ; Make sure that the weekdays in timestamps in org mode appear in English
+       (global-set-key (kbd "M-SPC") 'set-rectangular-region-anchor)
        (custom-set-variables
 	'(column-number-mode t)
 	'(custom-safe-themes
