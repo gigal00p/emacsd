@@ -111,4 +111,8 @@
 ; Enable rainbow delimiters in all programming modes
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
+(require 'paren)
+(set-face-attribute 'show-paren-match nil :foreground "black" :background "green")
+(set-face-attribute 'show-paren-match nil :weight 'extra-bold)
+
 (provide 'sane-defaults)
