@@ -47,21 +47,18 @@
       ((string= (system-name) "walkiewk-04JG5H")
        (setenv "KWORGHOME" "/Users/walkiewk/Documents/org")))
 
-
-; (setenv "KWORGHOME" "/Users/walkiewk/Documents/org")
-
 (setq org-default-notes-file (concat (getenv "KWORGHOME") "/notki.org"))
 
 (setq org-agenda-files
       (list
        (concat (getenv "KWORGHOME") "/notki.org")
-       (concat (getenv "KWORGHOME") "/PHC.org")
+       (concat (getenv "KWORGHOME") "/projects/PHC/PHC.org")
        (concat (getenv "KWORGHOME") "/tasks.org")))
 
 (setq org-capture-templates
       '(("k" "Various TODO's" entry
-         (file+headline (concat (getenv "KWORGHOME") "/tasks.org") "Uncategorized TODO entries")
-         "\n\n** TODO %?\n   SCHEDULED: %t" 
+         (file+headline "/Users/walkiewk/Documents/org/tasks.org" "Uncategorized TODO entries")
+         "\n\n** TODO %?\n   SCHEDULED: %T" 
          :empty-lines 1)))
 
 (setq org-agenda-restore-windows-after-quit t)
@@ -84,7 +81,7 @@
 ; Fonts in src blocks in babel
 (setq org-src-fontify-natively t)
 
-;(add-hook 'org-finalize-agenda-hook 'kfwz/org-agenda-to-appt 'append)
+(add-hook 'org-finalize-agenda-hook 'kfwz/org-agenda-to-appt 'append)
 
 (setq system-time-locale "C")
 
