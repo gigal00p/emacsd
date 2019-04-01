@@ -14,6 +14,7 @@
         elpy
         emmet-mode
         esup                   ; startup profiling
+        expand-region
         exec-path-from-shell
         flycheck
         go-mode
@@ -29,6 +30,7 @@
         paredit
         rainbow-delimiters
         rg
+        rainbow-delimiters
         rust-mode
         solarized-theme
         slime
