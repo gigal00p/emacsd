@@ -115,4 +115,7 @@
 (set-face-attribute 'show-paren-match nil :foreground "black" :background "green")
 (set-face-attribute 'show-paren-match nil :weight 'extra-bold)
 
+(require 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
+
 (provide 'sane-defaults)
