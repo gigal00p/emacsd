@@ -8,7 +8,7 @@
 (setq visible-bell 1)
 
 ;; Auto refresh buffers
-(global-auto-revert-mode 1)
+(global-auto-revert-mode t)
 
 ;; Also auto refresh dired, but be quiet about it
 (setq global-auto-revert-non-file-buffers t)
@@ -112,7 +112,8 @@
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
 (require 'paren)
-(set-face-attribute 'show-paren-match nil :foreground "black" :background "green")
+;(set-face-attribute 'show-paren-match nil :foreground "black" :background "green")
+(set-face-attribute 'show-paren-match nil :foreground "black" :background "#ff3e96")
 (set-face-attribute 'show-paren-match nil :weight 'extra-bold)
 
 (require 'expand-region)
