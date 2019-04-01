@@ -40,6 +40,7 @@
 ;(add-to-list 'org-src-lang-modes (quote ("plantuml" . fundamental)))
 (setq org-agenda-span 14)
 
+;; TODO: refactor this to use $HOME variable
 (cond ((string= (system-name) "DESKTOP-SP63KME")
        (setenv "KWORGHOME" "C:\\Users\\krzysztof\\Documents\\org_projects"))
       ((string= (system-name) "walkiewk-2EFFT0")
