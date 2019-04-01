@@ -108,4 +108,7 @@
 ;; overwrite selected text
 (delete-selection-mode t)
 
+; Enable rainbow delimiters in all programming modes
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+
 (provide 'sane-defaults)
