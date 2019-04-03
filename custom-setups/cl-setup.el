@@ -1,21 +1,6 @@
-;(eval-after-load 'lisp-mode "C:/Users/krzysztof/quicklisp/slime-helper.el")
-;(setq inferior-lisp-program "C:\\tools\\soft\\sbcl\\sbcl.exe")
-;(add-to-list 'load-path "C:/tools/soft/sbcl")
-
 (eval-after-load 'lisp-mode "~/quicklisp/slime-helper.el")
 (setq inferior-lisp-program "sbcl")
 (require 'slime)
-; (slime-setup '(slime-fancy
-;              slime-fuzzy
-;              slime-fontifying-fu
-;              slime-tramp
-;              slime-asdf
-;              slime-xref-browser
-;              slime-highlight-edits
-;              slime-sprof
-;              slime-scratch
-;              slime
-;              company))
 
 (slime-setup '(slime-asdf
                slime-autodoc
