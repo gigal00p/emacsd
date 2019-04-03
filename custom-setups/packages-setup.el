@@ -34,6 +34,7 @@
         rust-mode
         solarized-theme
         slime
+        slime-company
         yaml-mode
         yasnippet
         yasnippet-snippets))

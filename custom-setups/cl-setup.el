@@ -5,7 +5,6 @@
 (eval-after-load 'lisp-mode "~/quicklisp/slime-helper.el")
 (setq inferior-lisp-program "sbcl")
 (require 'slime)
-
 ; (slime-setup '(slime-fancy
 ;              slime-fuzzy
 ;              slime-fontifying-fu
@@ -31,8 +30,7 @@
                slime-repl
                slime-sbcl-exts
                slime-scratch
-               slime
-               company
+               slime-company
                slime-xref-browser))
 
 (setq slime-complete-symbol*-fancy t
