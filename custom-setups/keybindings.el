@@ -23,6 +23,7 @@
 (global-set-key [(control enter)] 'repeat)
 
 (global-set-key (kbd "C-c C-b") 'ido-switch-buffer)
+(global-set-key (kbd "C-x C-b") 'ido-switch-buffer)
 
 ;Aliases
 (defalias 'qrr 'query-replace-regexp)
