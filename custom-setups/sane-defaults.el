@@ -64,10 +64,9 @@
 (set-default 'truncate-lines nil)
 
 ;helm narrowing framework
-;(require 'helm-config)
 (helm-mode 1)
 ; show available keybindings
-;(require 'helm-descbinds)
+(require 'helm-descbinds)
 
 (setq
  helm-always-two-windows t
@@ -83,7 +82,7 @@
 (setq browse-url-browser-function (quote browse-url-generic))
 
 
-; Disable recentering
+; DISABLE RECENTERING
 (setq scroll-step 1)
 (setq scroll-conservatively 10000)
 (setq auto-window-vscroll nil)
@@ -91,7 +90,7 @@
 (setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
 (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 
-; browse kill-ring
+; BROWSE KILL-RING
 (require 'browse-kill-ring)
 
 
@@ -108,11 +107,10 @@
 ;; overwrite selected text
 (delete-selection-mode t)
 
-; Enable rainbow delimiters in all programming modes
+; ENABLE RAINBOW DELIMITERS IN ALL PROGRAMMING MODES
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
 (require 'paren)
-;(set-face-attribute 'show-paren-match nil :foreground "black" :background "green")
 (set-face-attribute 'show-paren-match nil :foreground "black" :background "#ff3e96")
 (set-face-attribute 'show-paren-match nil :weight 'extra-bold)
 
