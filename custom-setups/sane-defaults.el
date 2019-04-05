@@ -118,4 +118,11 @@
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
 
+(display-time-mode 1)
+(setq display-time-day-and-date t)
+(display-time)
+
+; No splash screen please ... jeez
+(setq inhibit-startup-message t)
+
 (provide 'sane-defaults)
