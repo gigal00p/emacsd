@@ -1,40 +1,40 @@
 ;;;;;;;;;;; LOOK AND FEEL ;;;;;;;;;;
-;;; pokazuje linie i kolumny
+
+; SHOW LINES AND COLUMNS
 (setq column-number-mode t)
 (setq line-number-mode t)
 
-; dezaktywuje toolbar in gui
+; DEACTIVATE TOOLBAR
 (tool-bar-mode 0)
-;dezaktuwyje menubar in gui
-(menu-bar-mode 0)
-;;; dezaktywuje scroll-bar
-(scroll-bar-mode 0)
-;;; matchowanie nawiasow
-(show-paren-mode 1)
-;;; No splash screen please ... jeez
-(setq inhibit-startup-message t)
 
-;; Display edited file path in window title
+; DEACTIVATE MENUBAR
+(menu-bar-mode 0)
+
+; DEACTIVATE SCROLL-BAR
+(scroll-bar-mode 0)
+
+; MATCH PARENTHESIS
+(show-paren-mode 1)
+
+; DISPLAY EDITED FILE PATH IN WINDOW TITLE
 (setq frame-title-format
       '((:eval (if (buffer-file-name)
                    (abbreviate-file-name (buffer-file-name))
                  "%b"))))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;; COLOR THEME ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; COLOR THEME
 (load-theme 'wombat t)
 
-; Kolor podswietlania
+; REGION HIGHLIGHTING COLOUR
 (set-face-attribute 'region nil :background "brown")
 
 ; HIGHLIGHT CURRENT LINE
 (global-hl-line-mode 1)
 
-;To keep syntax highlighting in the current line:
+; TO KEEP SYNTAX HIGHLIGHTING IN THE CURRENT LINE:
 (set-face-foreground 'highlight nil)
-
 (set-default 'cursor-type 'box)
 (set-cursor-color "#ff0000")
-
 (setq default-frame-alist '((cursor-color . "red")))
 
 (provide 'appearance)
