@@ -43,6 +43,7 @@
 
 ; Some settings found in `Mastering Emacs`.
 (setq ido-enable-flex-matching t)
+(setq ido-separator "\n")
 
 ; use company mode in all buffers.
 ;(global-company-mode)
