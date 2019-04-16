@@ -124,4 +124,7 @@
 ; No splash screen please ... jeez
 (setq inhibit-startup-message t)
 
+; open files in same frame
+(setq ns-pop-up-frames nil)
+
 (provide 'sane-defaults)
