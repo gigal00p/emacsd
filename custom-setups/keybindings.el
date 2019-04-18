@@ -77,7 +77,11 @@
 (global-set-key [M-up] 'move-text-up)
 (global-set-key [M-down] 'move-text-down)
 (global-set-key "\C-cd" 'kfwz-duplicate-line)
+
+;; ace-window
 (global-set-key (kbd "C-<f12>") 'ace-window)
+(setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
+
 (global-set-key (kbd "M-<f1>") 'kfwz-compile-all-elisp-files)
 (global-set-key (kbd "M-i") 'kfwz-kill-line-up)
 
