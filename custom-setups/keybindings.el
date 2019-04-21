@@ -80,6 +80,7 @@
 
 ;; ace-window
 (global-set-key (kbd "C-<f12>") 'ace-window)
+(global-set-key (kbd "M-o") 'ace-window)
 (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 
 (global-set-key (kbd "M-<f1>") 'kfwz-compile-all-elisp-files)
