@@ -28,6 +28,7 @@
         move-text              ; move text lines up down
         multiple-cursors
         paredit
+        quickrun
         rainbow-delimiters
         rg
         rainbow-delimiters
