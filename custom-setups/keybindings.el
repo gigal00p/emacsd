@@ -112,6 +112,9 @@
 
 (global-set-key (kbd "C-c C-s") 'rgrep)
 
+(global-set-key (kbd "M-]") 'other-window)
+(global-set-key (kbd "M-[") (lambda () (interactive) (other-window -1)))
+
 (global-set-key (kbd "C-c q") 'dired-toogle-read-only)
 
 (when (eq system-type 'darwin) ;; mac specific settings
