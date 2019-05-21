@@ -2,8 +2,7 @@
       (quote ((sequence "TODO(t)" "NEXT(n)" "STARTED(s)" "|" "DONE(d)")
               (sequence "FEEDBACK(b)" "FINDOUT(o)" "VERIFY(v)" "|" "DONE(d)")
               (sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
-              (sequence "WAITING(w@/!)" "HOLD(h@/!)" "|" "CANCELLED(c@/!)" "DONE(d)")
-              )))
+              (sequence "WAITING(w@/!)" "HOLD(h@/!)" "|" "CANCELLED(c@/!)" "DONE(d)"))))
 
 (setq org-todo-keyword-faces
       (quote (("TODO" :foreground "red" :weight bold)
@@ -14,9 +13,7 @@
               ("WAITING" :foreground "orange" :weight bold)
               ("HOLD" :foreground "magenta" :weight bold)
               ("CANCELLED" :foreground "forest green" :weight bold)
-              ("VERIFY" :foreground "DeepPink1" :weight bold)
-              )))
-
+              ("VERIFY" :foreground "DeepPink1" :weight bold))))
 
 (org-babel-do-load-languages
  'org-babel-load-languages
@@ -31,10 +28,10 @@
    (R . t)
    (emacs-lisp . t)))
 
-;Do not prompt to confirm evaluation
+; Do not prompt to confirm evaluation
 ; This may be dangerous - make sure you understand the consequences
 ; of setting this -- see the docstring for details
-(setq org-confirm-babel-evaluate nil)
+(setq org-confirm-babel-evaluate t)
 
 ; Use fundamental mode when editing plantuml blocks with C-c '
 ;(add-to-list 'org-src-lang-modes (quote ("plantuml" . fundamental)))
