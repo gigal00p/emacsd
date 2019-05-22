@@ -14,7 +14,6 @@
   (when (file-directory-p project)
     (add-to-list 'load-path project)))
 
-
 ; my custom setups
 (require 'packages-setup)
 (require 'appearance)
@@ -55,5 +54,6 @@
   (setq mac-command-modifier 'meta)
   (setq mac-option-modifier nil))
 
+(require 'keychain-environment)
 (keychain-refresh-environment)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
