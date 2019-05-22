@@ -16,7 +16,6 @@
 
 
 ; my custom setups
-;(package-initialize)
 (require 'packages-setup)
 (require 'appearance)
 (require 'keybindings)
@@ -47,8 +46,7 @@
   ("github" . browse-url-chrome)
   ("quicklisp" . browse-url-firefox)
   ("thefreedictionary\\.com" . eww-browse-url)
-  ("." . browse-url-default-browser)
-  ))
+  ("." . browse-url-default-browser)))
 
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize)
