@@ -45,13 +45,13 @@
       ((string= (system-name) "walkiewk-04JG5H")
        (setenv "KWORGHOME" "/Users/walkiewk/Documents/org")))
 
-(setq org-default-notes-file (concat (getenv "KWORGHOME") "/notki.org"))
+(setq org-default-notes-file (concat (getenv "KWORGHOME") "/work/notki.org"))
 
 (setq org-agenda-files
       (list
-       (concat (getenv "KWORGHOME") "/notki.org")
-       (concat (getenv "KWORGHOME") "/projects/PHC/PHC.org")
-       (concat (getenv "KWORGHOME") "/tasks.org")))
+       (concat (getenv "KWORGHOME") "/work/notki.org")
+       (concat (getenv "KWORGHOME") "/work/projects/PHC/PHC.org")
+       (concat (getenv "KWORGHOME") "/work/tasks.org")))
 
 (setq org-capture-templates
       '(("k" "Various TODO's" entry
