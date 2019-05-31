@@ -14,6 +14,9 @@
   (when (file-directory-p project)
     (add-to-list 'load-path project)))
 
+(custom-set-variables
+ '(helm-follow-mode-persistent t))
+
 ; my custom setups
 (require 'packages-setup)
 (require 'appearance)
@@ -56,4 +59,8 @@
 
 (require 'keychain-environment)
 (keychain-refresh-environment)
+
+(projectile-mode +1)
+(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
