@@ -22,3 +22,5 @@ elpa/*
 network-security.data
 .DS_Store
 bookmarks
+projectile-bookmarks.eld
+init.elc~
