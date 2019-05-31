@@ -3,6 +3,5 @@
 # key: src
 # --
 #+begin_src $1
-
-#+end_src
 $0
+#+end_src
