@@ -40,6 +40,7 @@
         solarized-theme
         slime
         slime-company
+        terraform-mode
         yaml-mode
         yasnippet
         yasnippet-snippets))
