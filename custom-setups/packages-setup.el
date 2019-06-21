@@ -5,6 +5,7 @@
       '(ace-jump-buffer
         ace-jump-mode
         ace-window             ; jump to other frame in emacs
+        ag
         auto-complete
         browse-kill-ring
         cider
@@ -21,6 +22,7 @@
         go-autocomplete
         helm
         helm-descbinds
+        helm-ag
         htmlize
         key-chord
         magit
@@ -28,6 +30,7 @@
         move-text              ; move text lines up down
         multiple-cursors
         paredit
+        projectile
         quickrun
         rainbow-delimiters
         rg
@@ -37,6 +40,7 @@
         solarized-theme
         slime
         slime-company
+        terraform-mode
         yaml-mode
         yasnippet
         yasnippet-snippets))
