@@ -69,8 +69,8 @@
 (cond  ((string= (system-name) "daemon")
         (defvar perltidy-program  "/home/krzysztof/.local/bin/perltidy"
           "*Program name of perltidy"))
-       ((string= (system-name) "asux")
-        (defvar perltidy-program  "/opt/pbrew/perls/perl-5.22.0/bin/perltidy"
+       ((string= (system-name) "fanless")
+        (defvar perltidy-program  "/home/krzysztof/.perl5/perls/perl-5.30.0/bin/perltidy"
           "*Program name of perltidy"))
        ((string= (system-name) "ASUS")
         (defvar perltidy-program  "E:\\ProgramFiles\\SP52211_64\\perl\\bin\\perltidy"
