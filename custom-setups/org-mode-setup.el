@@ -50,8 +50,9 @@
 (setq org-agenda-files
       (list
        (concat (getenv "KWORGHOME") "/work/notki.org")
-       (concat (getenv "KWORGHOME") "/work/projects/PDT/pdt.org")
-       (concat (getenv "KWORGHOME") "/work/tasks.org")))
+       (concat (getenv "KWORGHOME") "/work/projects/PTD/ptd.org")
+       (concat (getenv "KWORGHOME") "/work/tasks.org")
+       (concat (getenv "KWORGHOME") "/priv/learning/learning-main.org")))
 
 (setq org-capture-templates
       '(("k" "Various TODO's" entry
