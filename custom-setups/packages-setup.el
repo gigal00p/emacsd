@@ -12,6 +12,7 @@
         clojure-mode
         clojure-snippets
         company
+        docker
         elpy
         emmet-mode
         esup                   ; startup profiling
