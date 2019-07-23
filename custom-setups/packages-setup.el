@@ -30,6 +30,7 @@
         monokai-theme
         move-text              ; move text lines up down
         multiple-cursors
+        neotree
         paredit
         projectile
         quickrun
