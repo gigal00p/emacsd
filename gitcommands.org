@@ -39,3 +39,47 @@ git -c http.sslVerify=false clone https://some_server/some_repo.git
 
 - git fetch origin
 - git checkout --track origin/<remote_branch_name>
+
+* Number of commits per authon on all branches
+
+git shortlog -s -n --all --no-merges
+
+* Git aliases
+
+#+begin_src sh
+[alias]
+	clone-branches = "! git branch -a | sed -n \"/\\/HEAD /d; /\\/master$/d; /remotes/p;\" | xargs -L1 git checkout -t"
+	show-tracked = "! git log --pretty=format: --name-only --diff-filter=A | sort - | sed '/^$/d'"
+	authors = "! git shortlog -s -n --all --no-merges"
+#+end_src
+
+* Whole gitconfig
+
+#+begin_src sh
+[user]
+	email =
+	name = Krzysztof Walkiewicz
+
+[core]
+	editor = vim
+	filemode = false
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[alias]
+	clone-branches = "! git branch -a | sed -n \"/\\/HEAD /d; /\\/master$/d; /remotes/p;\" | xargs -L1 git checkout -t"
+	show-tracked = "! git log --pretty=format: --name-only --diff-filter=A | sort - | sed '/^$/d'"
+	authors = "! git shortlog -s -n --all --no-merges"
+#+end_src
