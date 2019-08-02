@@ -1,4 +1,4 @@
-(eval-after-load 'lisp-mode "~/quicklisp/slime-helper.el")
+(eval-after-load 'lisp-mode "~/code/quicklisp/slime-helper.el")
 (setq inferior-lisp-program "sbcl")
 (require 'slime)
 
@@ -26,5 +26,5 @@
 
 (add-hook 'slime-repl-mode-hook #'paredit-mode)
 
-(load "/home/krzysztof/quicklisp/clhs-use-local.el" t)
+(load "~/code/quicklisp/clhs-use-local.el" t)
 (provide 'cl-setup)
