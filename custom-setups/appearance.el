@@ -23,7 +23,7 @@
                  "%b"))))
 
 ; COLOR THEME
-(load-theme 'dichromacy t)
+(load-theme 'wombat t)
 
 ; REGION HIGHLIGHTING COLOUR
 (set-face-attribute 'region nil :background "brown")
