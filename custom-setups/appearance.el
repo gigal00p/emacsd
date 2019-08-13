@@ -14,6 +14,10 @@
 (scroll-bar-mode 0)
 
 ; MATCH PARENTHESIS
+;; disabling meny bar in tui
+(menu-bar-mode 0)
+
+;;; parens matching
 (show-paren-mode 1)
 
 ; DISPLAY EDITED FILE PATH IN WINDOW TITLE
