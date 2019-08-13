@@ -122,4 +122,8 @@
   (setq mac-command-modifier 'meta)
   (global-set-key [kp-delete] 'delete-char))
 
+
+;(global-set-key "\C-xs" 'paredit-forward-slurp-sexp)
+;(global-set-key "\C-xx"  'paredit-backward-slurp-sexp)
+
 (provide 'keybindings)
