@@ -38,21 +38,14 @@
 (require 'helm-descbinds)
 (helm-descbinds-mode)
 
-(setq
- browse-url-browser-function
- '(
-  ("wikipedia\\.org" . browse-url-firefox)
-  ("github" . browse-url-chrome)
-  ("quicklisp" . browse-url-firefox)
-  ("thefreedictionary\\.com" . eww-browse-url)
-  ("." . browse-url-default-browser)))
-
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize)
   (setq mac-option-key-is-meta nil)
   (setq mac-command-key-is-meta t)
   (setq mac-command-modifier 'meta)
-  (setq mac-option-modifier nil))
+  (setq mac-option-modifier nil)
+  (setq browse-url-browser-function 'browse-url-generic
+	browse-url-generic-program "/Applications/Firefox.app/Contents/MacOS/firefox"))
 
 (require 'keychain-environment)
 (keychain-refresh-environment)
