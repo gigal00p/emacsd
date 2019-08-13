@@ -1,5 +1,5 @@
 (cond (
-       (string= (system-name) "fanless" )
+       (string= (system-name) "techcrossing" )
        (setq system-time-locale "C") ; Make sure that the weekdays in timestamps in org mode appear in English
        (custom-set-variables
 	'(column-number-mode t)
