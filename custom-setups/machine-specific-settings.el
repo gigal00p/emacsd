@@ -1,5 +1,5 @@
 (cond (
-       (string= (system-name) "fanless" )
+       (string= (system-name) "techcrossing" )
        (setq system-time-locale "C") ; Make sure that the weekdays in timestamps in org mode appear in English
        (custom-set-variables
 	'(column-number-mode t)
@@ -24,6 +24,15 @@
       ((string= (system-name) "daemon")
        (setq system-time-locale "C") ; Make sure that the weekdays in timestamps in org mode appear in English
        (global-set-key (kbd "M-SPC") 'set-rectangular-region-anchor)
+       (string= (system-name) "vz279932" )
+
+       ;; System locale to use for formatting time values.
+       (setq system-time-locale "C")    ; Make sure that the weekdays in the
+					; time stamps of your Org mode files and
+					; in the agenda appear in English.
+
+       ;(setq org-plantuml-jar-path "C:\\ITools\\ProgramFiles\\japps\\plantuml\\plantuml.jar")
+
        (custom-set-variables
 	'(column-number-mode t)
 	'(custom-safe-themes

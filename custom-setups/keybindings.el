@@ -122,7 +122,6 @@
   (setq mac-command-modifier 'meta)
   (global-set-key [kp-delete] 'delete-char))
 
-
 (global-set-key [f8] 'neotree-toggle)
 
 (provide 'keybindings)
