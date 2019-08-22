@@ -124,4 +124,6 @@
 
 (global-set-key [f8] 'neotree-toggle)
 
+(global-set-key [M-f8] 'find-directory-in-project-by-selected)
+
 (provide 'keybindings)
