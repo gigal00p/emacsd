@@ -13,6 +13,7 @@
         clojure-snippets
         company
         docker
+        dracula-theme
         elpy
         emmet-mode
         esup                   ; startup profiling
