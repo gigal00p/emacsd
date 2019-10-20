@@ -126,4 +126,8 @@
 
 (global-set-key [M-f8] 'find-directory-in-project-by-selected)
 
+(global-unset-key (kbd "C-c SPC")) ;; previously conf-space-keyword
+
+(global-set-key (kbd "C-c SPC") 'kfwz-rotate-windows)
+
 (provide 'keybindings)
