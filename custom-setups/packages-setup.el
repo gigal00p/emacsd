@@ -6,6 +6,7 @@
         ace-jump-mode
         ace-window             ; jump to other frame in emacs
         ag
+        all-the-icons
         auto-complete
         browse-kill-ring
         cider

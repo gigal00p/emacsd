@@ -149,4 +149,6 @@
             (define-key eshell-mode-map [remap eshell-pcomplete] 'helm-esh-pcomplete)
             (define-key eshell-mode-map (kbd "M-l") 'helm-eshell-history)))
 
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+
 (provide 'sane-defaults)

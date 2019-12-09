@@ -25,3 +25,4 @@ bookmarks
 projectile-bookmarks.eld
 init.elc~
 projectile.cache
+.cache
