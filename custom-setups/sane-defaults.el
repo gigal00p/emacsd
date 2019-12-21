@@ -36,7 +36,18 @@
 (setq make-backup-files nil) 
 
 ; dired
+(require 'dired-x)
 (setq dired-dwim-target t)
+
+(when (string= system-type "darwin")
+  (setq dired-use-ls-dired t
+        insert-directory-program "/usr/local/bin/gls"
+        dired-listing-switches "-laGh1v --group-directories-first"))
+
+; (setq dired-listing-switches "-alh --group-directories-first")
+
+(setq dired-recursive-copies 'always)
+(setq dired-recursive-deletes 'always)
 
 ; IDO
 (ido-mode t)
@@ -93,10 +104,6 @@
 ; BROWSE KILL-RING
 (require 'browse-kill-ring)
 
-
-;TODO: description
-(require 'dired-x)
-
 (autoload 'markdown-mode "markdown-mode"
   "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
@@ -150,5 +157,6 @@
             (define-key eshell-mode-map (kbd "M-l") 'helm-eshell-history)))
 
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+
 
 (provide 'sane-defaults)
