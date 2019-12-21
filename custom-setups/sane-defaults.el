@@ -39,12 +39,14 @@
 (require 'dired-x)
 (setq dired-dwim-target t)
 
-(when (string= system-type "darwin")
-  (setq dired-use-ls-dired t
-        insert-directory-program "/usr/local/bin/gls"
-        dired-listing-switches "-laGh1v --group-directories-first"))
-
-; (setq dired-listing-switches "-alh --group-directories-first")
+(cond (
+       (string= system-type "darwin")
+       (setq dired-use-ls-dired t
+	     insert-directory-program "/usr/local/bin/gls"
+	     dired-listing-switches "-laGh1v --group-directories-first"))
+      ((string= system-type "gnu/linux")
+       (setq dired-use-ls-dired t
+	     dired-listing-switches "-laGh1v --group-directories-first")))
 
 (setq dired-recursive-copies 'always)
 (setq dired-recursive-deletes 'always)
@@ -158,5 +160,7 @@
 
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 
+
+;(setq package-check-signature nil)
 
 (provide 'sane-defaults)
