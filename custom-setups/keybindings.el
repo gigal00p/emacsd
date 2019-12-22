@@ -33,19 +33,12 @@
 
 
 ;;;;;;;;;;; GLOBAL KEYBINDINGS AVAILABLE ONCE PACKAGES GET INSTALLED ;;;;;;;;;;
-(global-set-key (kbd "M-x") 'helm-M-x) 
-(global-set-key (kbd "C-x b") 'helm-mini)
-(global-set-key (kbd "C-x r l" ) 'helm-bookmarks)
-(global-set-key (kbd "C-c h") 'helm-imenu)
-(global-set-key (kbd "C-c C-f") 'helm-find)
-
 ;;; KEY CHORDS ;;;
 (key-chord-mode 1)
 (key-chord-define-global "'/" 'ace-jump-mode)
 (key-chord-define-global ";." 'ace-jump-buffer)
 (key-chord-define-global "FF" 'ido-find-file)
 (key-chord-define-global "XX" 'xah-new-empty-buffer)
-(key-chord-define-global "BB" 'helm-bookmarks)
 
 
 ; magit shortcuts
@@ -101,7 +94,6 @@
 
 ; switch to other org buffer
 (global-set-key "\C-cb" 'org-switchb)
-(global-set-key (kbd "<mouse-3>") 'helm-imenu)
 
 (define-key global-map "\C-cc" 'org-capture)
 (global-set-key (kbd "M-<f4>") 'save-buffers-kill-terminal)

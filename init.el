@@ -1,11 +1,11 @@
-; Always prefer newer compilet elc files
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+			 ("melpa-stable" . "http://stable.melpa.org/packages/")
+			 ; ("melpa" . "https://melpa.org/packages/")
+			 ("org" . "http://orgmode.org/elpa/")))
 
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
 (package-initialize)
 
+; Always prefer newer compilet elc files
 (setq load-prefer-newer t)
 
 ;; Define additional load path
@@ -42,9 +42,6 @@
 (after 'go-mode
   (require 'golang-setup))
 
-(require 'helm-descbinds)
-(helm-descbinds-mode)
-
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize)
   (setq mac-option-key-is-meta nil)
@@ -61,9 +58,7 @@
 (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 (require 'keybindings)
-
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-			 ("melpa-stable" . "http://stable.melpa.org/packages/")
-			 ; ("melpa" . "https://melpa.org/packages/")
-			 ("org" . "http://orgmode.org/elpa/")))
+(require 'key-chord)
+(require 'multiple-cursors)
+(global-company-mode)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
