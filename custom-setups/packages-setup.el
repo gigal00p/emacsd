@@ -23,9 +23,6 @@
         flycheck
         go-mode
         go-autocomplete
-        helm
-        helm-descbinds
-        helm-ag
         htmlize
         key-chord
         magit
@@ -59,12 +56,7 @@
       (dolist (p cfg-var:packages)
         (package-install p)))))
 
-(package-initialize)
-
 (cfg:install-packages)
 
-(require 'key-chord)
-(require 'multiple-cursors)
-(global-company-mode)
 
 (provide 'packages-setup)
