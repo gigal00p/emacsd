@@ -9,6 +9,7 @@
         all-the-icons
         auto-complete
         browse-kill-ring
+        counsel
         cider
         clojure-mode
         clojure-snippets
