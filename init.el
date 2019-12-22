@@ -1,3 +1,10 @@
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+			 ("melpa-stable" . "http://stable.melpa.org/packages/")
+			 ; ("melpa" . "https://melpa.org/packages/")
+			 ("org" . "http://orgmode.org/elpa/")))
+
+(package-initialize)
+
 ; Always prefer newer compilet elc files
 (setq load-prefer-newer t)
 
@@ -17,11 +24,14 @@
 ; my custom setups
 (require 'packages-setup)
 (require 'appearance)
-(require 'keybindings)
+
 (require 'custom-functions)
 (require 'sane-defaults)
 (require 'machine-specific-settings)
 (require 'org-mode-setup)
+(require 'keybindings)
+(require 'key-chord)
+(require 'multiple-cursors)
 
 (after 'clojure-mode
   (require 'clojure-setup))
@@ -34,9 +44,6 @@
 
 (after 'go-mode
   (require 'golang-setup))
-
-(require 'helm-descbinds)
-(helm-descbinds-mode)
 
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize)
@@ -53,4 +60,6 @@
 (projectile-mode +1)
 (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
+(global-company-mode)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

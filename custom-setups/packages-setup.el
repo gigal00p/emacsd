@@ -6,8 +6,10 @@
         ace-jump-mode
         ace-window             ; jump to other frame in emacs
         ag
+        all-the-icons
         auto-complete
         browse-kill-ring
+        counsel
         cider
         clojure-mode
         clojure-snippets
@@ -22,9 +24,6 @@
         flycheck
         go-mode
         go-autocomplete
-        helm
-        helm-descbinds
-        helm-ag
         htmlize
         key-chord
         magit
@@ -38,7 +37,6 @@
         rainbow-delimiters
         rg
         rust-mode
-        scala-mode
         solarized-theme
         slime
         slime-company
@@ -59,12 +57,7 @@
       (dolist (p cfg-var:packages)
         (package-install p)))))
 
-(package-initialize)
-
 (cfg:install-packages)
 
-(require 'key-chord)
-(require 'multiple-cursors)
-(global-company-mode)
 
 (provide 'packages-setup)

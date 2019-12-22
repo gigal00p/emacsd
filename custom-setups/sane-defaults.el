@@ -36,7 +36,20 @@
 (setq make-backup-files nil) 
 
 ; dired
+(require 'dired-x)
 (setq dired-dwim-target t)
+
+(cond (
+       (string= system-type "darwin")
+       (setq dired-use-ls-dired t
+	     insert-directory-program "/usr/local/bin/gls"
+	     dired-listing-switches "-laGh1v --group-directories-first"))
+      ((string= system-type "gnu/linux")
+       (setq dired-use-ls-dired t
+	     dired-listing-switches "-laGh1v --group-directories-first")))
+
+(setq dired-recursive-copies 'always)
+(setq dired-recursive-deletes 'always)
 
 ; IDO
 (ido-mode t)
@@ -63,19 +76,6 @@
 
 (set-default 'truncate-lines nil)
 
-;helm narrowing framework
-(helm-mode 1)
-; show available keybindings
-(require 'helm-descbinds)
-
-(setq
- helm-always-two-windows t
- helm-split-window-default-side 'left)
-
-; Set iexplore as default browser
-;(setq browse-url-browser-function 'browse-url-generic
-;       browse-url-generic-program "iexplore")
-
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "firefox")
 
@@ -92,10 +92,6 @@
 
 ; BROWSE KILL-RING
 (require 'browse-kill-ring)
-
-
-;TODO: description
-(require 'dired-x)
 
 (autoload 'markdown-mode "markdown-mode"
   "Major mode for editing Markdown files" t)
@@ -143,10 +139,17 @@
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
 
-(add-hook 'eshell-mode-hook
-          (lambda ()
-            (eshell-cmpl-initialize)
-            (define-key eshell-mode-map [remap eshell-pcomplete] 'helm-esh-pcomplete)
-            (define-key eshell-mode-map (kbd "M-l") 'helm-eshell-history)))
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+
+
+;(setq package-check-signature nil)
+
+
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
+(setq enable-recursive-minibuffers t)
+;; enable this if you want `swiper' to use it
+;; (setq search-default-mode #'char-fold-to-regexp)
+
 
 (provide 'sane-defaults)

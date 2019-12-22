@@ -33,19 +33,12 @@
 
 
 ;;;;;;;;;;; GLOBAL KEYBINDINGS AVAILABLE ONCE PACKAGES GET INSTALLED ;;;;;;;;;;
-(global-set-key (kbd "M-x") 'helm-M-x) 
-(global-set-key (kbd "C-x b") 'helm-mini)
-(global-set-key (kbd "C-x r l" ) 'helm-bookmarks)
-(global-set-key (kbd "C-c h") 'helm-imenu)
-(global-set-key (kbd "C-c C-f") 'helm-find)
-
 ;;; KEY CHORDS ;;;
 (key-chord-mode 1)
 (key-chord-define-global "'/" 'ace-jump-mode)
 (key-chord-define-global ";." 'ace-jump-buffer)
 (key-chord-define-global "FF" 'ido-find-file)
 (key-chord-define-global "XX" 'xah-new-empty-buffer)
-(key-chord-define-global "BB" 'helm-bookmarks)
 
 
 ; magit shortcuts
@@ -101,7 +94,6 @@
 
 ; switch to other org buffer
 (global-set-key "\C-cb" 'org-switchb)
-(global-set-key (kbd "<mouse-3>") 'helm-imenu)
 
 (define-key global-map "\C-cc" 'org-capture)
 (global-set-key (kbd "M-<f4>") 'save-buffers-kill-terminal)
@@ -129,5 +121,23 @@
 (global-unset-key (kbd "C-c SPC")) ;; previously conf-space-keyword
 
 (global-set-key (kbd "C-c SPC") 'kfwz-rotate-windows)
+
+(global-set-key "\C-s" 'swiper)
+(global-set-key (kbd "C-c C-r") 'ivy-resume)
+(global-set-key (kbd "<f6>") 'ivy-resume)
+(global-set-key (kbd "M-x") 'counsel-M-x)
+(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(global-set-key (kbd "<f1> f") 'counsel-describe-function)
+(global-set-key (kbd "<f1> v") 'counsel-describe-variable)
+(global-set-key (kbd "<f1> l") 'counsel-find-library)
+(global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
+(global-set-key (kbd "<f2> u") 'counsel-unicode-char)
+(global-set-key (kbd "C-c g") 'counsel-git)
+(global-set-key (kbd "C-c j") 'counsel-git-grep)
+(global-set-key (kbd "C-c k") 'counsel-ag)
+(global-set-key (kbd "C-x l") 'counsel-locate)
+(global-set-key (kbd "C-c h") 'counsel-imenu)
+
+(define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
 (provide 'keybindings)
