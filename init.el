@@ -29,6 +29,9 @@
 (require 'sane-defaults)
 (require 'machine-specific-settings)
 (require 'org-mode-setup)
+(require 'keybindings)
+(require 'key-chord)
+(require 'multiple-cursors)
 
 (after 'clojure-mode
   (require 'clojure-setup))
@@ -57,8 +60,6 @@
 (projectile-mode +1)
 (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
-(require 'keybindings)
-(require 'key-chord)
-(require 'multiple-cursors)
+
 (global-company-mode)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
