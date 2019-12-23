@@ -39,6 +39,9 @@
 (after 'lisp-mode
   (require 'cl-setup))
 
+(require 'lsp-java)
+(add-hook 'java-mode-hook #'lsp)
+
 (after 'python-mode
   (require 'python-setup))
 
