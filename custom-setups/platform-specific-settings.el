@@ -37,4 +37,4 @@
    '(hl-line ((t (:underline nil)))))))
 
 
-(provide 'machine-specific-settings)
+(provide 'platform-specific-settings)

@@ -27,7 +27,7 @@
 
 (require 'custom-functions)
 (require 'sane-defaults)
-(require 'machine-specific-settings)
+(require 'platform-specific-settings)
 (require 'org-mode-setup)
 (require 'keybindings)
 (require 'key-chord)
