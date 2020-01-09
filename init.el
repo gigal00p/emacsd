@@ -29,12 +29,18 @@
 (require 'sane-defaults)
 (require 'machine-specific-settings)
 (require 'org-mode-setup)
+(require 'keybindings)
+(require 'key-chord)
+(require 'multiple-cursors)
 
 (after 'clojure-mode
   (require 'clojure-setup))
 
 (after 'lisp-mode
   (require 'cl-setup))
+
+(require 'lsp-java)
+(add-hook 'java-mode-hook #'lsp)
 
 (after 'python-mode
   (require 'python-setup))
@@ -57,8 +63,6 @@
 (projectile-mode +1)
 (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
-(require 'keybindings)
-(require 'key-chord)
-(require 'multiple-cursors)
+
 (global-company-mode)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

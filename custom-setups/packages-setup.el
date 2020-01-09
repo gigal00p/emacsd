@@ -26,6 +26,7 @@
         go-autocomplete
         htmlize
         key-chord
+        lsp-java
         magit
         monokai-theme
         move-text              ; move text lines up down
