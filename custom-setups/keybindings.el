@@ -39,6 +39,7 @@
 (key-chord-define-global ";." 'ace-jump-buffer)
 (key-chord-define-global "FF" 'ido-find-file)
 (key-chord-define-global "XX" 'xah-new-empty-buffer)
+(key-chord-define-global "BB" 'counsel-bookmark)
 
 
 ; magit shortcuts
