@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: ptd
+# key: ptd
+# --
+| ENV           | Project ID                     | Project number | Project name                   |
+|---------------+--------------------------------+----------------+--------------------------------|
+| SB            | gred-ptddtalak-sb-001-e4372d8c |   947217532276 | PRJ-RSC-GRED-PTDDATALAK-SB-001 |
+| DEV           | gred-ptddtalak-dev-01-1538c72e |   697222720095 | PRJ-RSC-GRED-PTDDATALAK-DEV-01 |
+| QA            | gred-ptddatalak-qa-01-1d58104e |   972694327014 | PRJ-RSC-GRED-PTDDATALAK-QA-01  |
+| PROD (SB-002) | gred-ptddatalak-sb-02-c68d9a02 |   135433139069 | PRJ-RSC-GRED-PTDDATALAK-SB-02  |
+| ADM           | gred-ptddtalak-adm-01-b14b1f74 |   524253114146 | PRJ-RSC-GRED-PTDDATALAK-ADM-01 |
+$0

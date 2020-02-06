@@ -139,6 +139,8 @@
 (global-set-key (kbd "C-x l") 'counsel-locate)
 (global-set-key (kbd "C-c h") 'counsel-imenu)
 
+(global-set-key (kbd "M-s s") 'isearch-forward)
+
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
 (provide 'keybindings)

@@ -83,3 +83,11 @@ git shortlog -s -n --all --no-merges
 	show-tracked = "! git log --pretty=format: --name-only --diff-filter=A | sort - | sed '/^$/d'"
 	authors = "! git shortlog -s -n --all --no-merges"
 #+end_src
+
+* Cleanup local branches if merged to remote
+
+#+begin_src sh
+git remote prune origin --dry-run
+git remote prune origin
+git branch -vv | grep gone | awk '{print $1}' | xargs git branch -d
+#+end_src

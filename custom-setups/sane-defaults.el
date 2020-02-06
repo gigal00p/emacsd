@@ -152,4 +152,11 @@
 ;; (setq search-default-mode #'char-fold-to-regexp)
 
 
+;; ivy window size
+(setq ivy-height-alist
+      '((t
+         lambda (_caller)
+         (/ (frame-height) 2))))
+
+
 (provide 'sane-defaults)
