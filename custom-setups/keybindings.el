@@ -49,6 +49,7 @@
 (defalias 'md 'magit-diff)
 (defalias 'mpl 'magit-push)
 (defalias 'mps 'magit-pull)
+(defalias 'mbl 'magit-blame-popup)
 
 ;;; MULTIPLE CURSORS ;;;
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
