@@ -1,7 +1,7 @@
 (load (expand-file-name "~/quicklisp/slime-helper.el"))
 (setq inferior-lisp-program "sbcl")
 
-(setq inferior-lisp-program "sbcl")
+(setq inferior-lisp-program "sbcl --no-sysinit")
 (require 'slime)
 
 (slime-setup '(slime-asdf
@@ -28,5 +28,5 @@
 
 (add-hook 'slime-repl-mode-hook #'paredit-mode)
 
-(load "~/code/quicklisp/clhs-use-local.el" t)
+(load "~/quicklisp/clhs-use-local.el" t)
 (provide 'cl-setup)
