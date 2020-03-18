@@ -57,7 +57,7 @@
 
 (setq org-capture-templates
       '(("k" "Various TODO's" entry
-         (file+headline "/Users/walkiewk/Documents/org/tasks.org" "Uncategorized TODO entries")
+         (file "/Users/walkiewk/Documents/org/work/tasks.org")
          "\n\n** TODO %?\n   SCHEDULED: %T" 
          :empty-lines 1)))
 
@@ -84,5 +84,8 @@
 (add-hook 'org-finalize-agenda-hook 'kfwz/org-agenda-to-appt 'append)
 
 (setq system-time-locale "C")
+
+; Do not list sub-tasks in agenda view
+(setq org-agenda-todo-list-sublevels nil)
 
 (provide 'org-mode-setup)
