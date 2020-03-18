@@ -85,4 +85,7 @@
 
 (setq system-time-locale "C")
 
+; Do not list sub-tasks in agenda view
+(setq org-agenda-todo-list-sublevels nil)
+
 (provide 'org-mode-setup)
