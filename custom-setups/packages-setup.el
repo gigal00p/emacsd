@@ -7,6 +7,7 @@
         ace-window             ; jump to other frame in emacs
         ag
         all-the-icons
+        amx
         auto-complete
         browse-kill-ring
         counsel
