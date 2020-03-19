@@ -55,7 +55,7 @@
   (setq mac-command-modifier 'meta)
   (setq mac-option-modifier nil)
   (setq browse-url-browser-function 'browse-url-generic
-        browse-url-generic-program "/Applications/Firefox.app/Contents/MacOS/firefox"))
+        browse-url-generic-program "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"))
 
 (require 'keychain-environment)
 (keychain-refresh-environment)

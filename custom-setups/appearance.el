@@ -27,7 +27,7 @@
                  "%b"))))
 
 ; COLOR THEME
-(load-theme 'wombat t)
+(load-theme 'dichromacy t)
 
 ; REGION HIGHLIGHTING COLOUR
 (set-face-attribute 'region nil :background "brown")
@@ -40,5 +40,9 @@
 (set-default 'cursor-type 'box)
 (set-cursor-color "#ff0000")
 (setq default-frame-alist '((cursor-color . "red")))
+
+(custom-set-faces
+   '(default ((t (:family "Hack" :foundry "unknown" :slant normal :weight normal :height 195 :width normal))))
+   '(hl-line ((t (:underline nil)))))
 
 (provide 'appearance)

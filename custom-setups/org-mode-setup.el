@@ -49,15 +49,16 @@
 
 (setq org-agenda-files
       (list
-       (concat (getenv "KWORGHOME") "/work/notki.org")
-       (concat (getenv "KWORGHOME") "/work/projects/PTD/ptd.org")
+       ; (concat (getenv "KWORGHOME") "/work/notki.org")
+       ;(concat (getenv "KWORGHOME") "/work/projects/PTD/ptd.org")
        (concat (getenv "KWORGHOME") "/work/projects/PTD/tickets.org")
-       (concat (getenv "KWORGHOME") "/work/tasks.org")
-       (concat (getenv "KWORGHOME") "/priv/learning/learning-main.org")))
+       (concat (getenv "KWORGHOME") "/work/inbox.org")
+       ;(concat (getenv "KWORGHOME") "/priv/learning/learning-main.org")
+       ))
 
 (setq org-capture-templates
       '(("k" "Various TODO's" entry
-         (file "/Users/walkiewk/Documents/org/work/tasks.org")
+         (file "/Users/walkiewk/Documents/org/work/inbox.org")
          "\n\n** TODO %?\n   SCHEDULED: %T" 
          :empty-lines 1)))
 
