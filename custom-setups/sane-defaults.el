@@ -158,5 +158,6 @@
          lambda (_caller)
          (/ (frame-height) 2))))
 
+(desktop-save-mode 1)
 
 (provide 'sane-defaults)
