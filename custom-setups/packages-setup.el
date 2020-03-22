@@ -43,6 +43,7 @@
         slime
         slime-company
         terraform-mode
+        which-key
         yaml-mode
         yasnippet
         yasnippet-snippets))

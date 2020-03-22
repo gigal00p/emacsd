@@ -160,4 +160,7 @@
 
 (desktop-save-mode 1)
 
+(require 'which-key)
+(which-key-mode)
+
 (provide 'sane-defaults)
