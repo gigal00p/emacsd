@@ -26,9 +26,6 @@
                    (abbreviate-file-name (buffer-file-name))
                  "%b"))))
 
-; COLOR THEME
-(load-theme 'wombat t)
-
 ; REGION HIGHLIGHTING COLOUR
 (set-face-attribute 'region nil :background "brown")
 
@@ -44,5 +41,8 @@
 (custom-set-faces
    '(default ((t (:family "Hack" :foundry "unknown" :slant normal :weight normal :height 135 :width normal))))
    '(hl-line ((t (:underline nil)))))
+
+; COLOR THEME
+(load-theme 'dichromacy t)
 
 (provide 'appearance)

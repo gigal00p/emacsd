@@ -39,6 +39,7 @@
         rainbow-delimiters
         rg
         rust-mode
+        scala-mode
         solarized-theme
         slime
         slime-company

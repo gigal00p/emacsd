@@ -158,8 +158,6 @@
          lambda (_caller)
          (/ (frame-height) 2))))
 
-(desktop-save-mode 1)
-
 (require 'which-key)
 (which-key-mode)
 

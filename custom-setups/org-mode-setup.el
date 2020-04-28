@@ -1,8 +1,8 @@
 (setq org-todo-keywords
-      (quote ((sequence "TODO(t)" "NEXT(n)" "STARTED(s)" "|" "DONE(d)")
-              (sequence "FEEDBACK(b)" "FINDOUT(o)" "VERIFY(v)" "|" "DONE(d)")
+      (quote ((sequence "TODO(!)" "NEXT(n)" "STARTED(s)" "|" "DONE(!)")
+              (sequence "FEEDBACK(b)" "FINDOUT(o)" "VERIFY(v)" "|" "DONE(!)")
               (sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
-              (sequence "WAITING(w@/!)" "HOLD(h@/!)" "|" "CANCELLED(c@/!)" "DONE(d)"))))
+              (sequence "WAITING(w@/!)" "HOLD(h@/!)" "|" "CANCELLED(c@/!)" "DONE(!)"))))
 
 (setq org-todo-keyword-faces
       (quote (("TODO" :foreground "red" :weight bold)
