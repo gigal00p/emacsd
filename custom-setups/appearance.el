@@ -42,7 +42,7 @@
 (setq default-frame-alist '((cursor-color . "red")))
 
 (custom-set-faces
-   '(default ((t (:family "Hack" :foundry "unknown" :slant normal :weight normal :height 195 :width normal))))
+   '(default ((t (:family "Hack" :foundry "unknown" :slant normal :weight normal :height 135 :width normal))))
    '(hl-line ((t (:underline nil)))))
 
 (provide 'appearance)
