@@ -43,6 +43,6 @@
    '(hl-line ((t (:underline nil)))))
 
 ; COLOR THEME
-(load-theme 'dichromacy t)
+(load-theme 'wombat t)
 
 (provide 'appearance)
