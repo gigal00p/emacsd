@@ -90,4 +90,7 @@
 ; Do not list sub-tasks in agenda view
 (setq org-agenda-todo-list-sublevels nil)
 
+; https://www.gnu.org/software/emacs/manual/html_node/org/Closing-items.html
+(setq org-log-done 'time)
+
 (provide 'org-mode-setup)
