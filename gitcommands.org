@@ -91,3 +91,8 @@ git remote prune origin --dry-run
 git remote prune origin
 git branch -vv | grep gone | awk '{print $1}' | xargs git branch -d
 #+end_src
+
+
+* Showing which files has changed between two branches 
+
+git diff --name-status develop-datalake-phase-two develop .
