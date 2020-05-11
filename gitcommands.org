@@ -82,6 +82,7 @@ git shortlog -s -n --all --no-merges
 	clone-branches = "! git branch -a | sed -n \"/\\/HEAD /d; /\\/master$/d; /remotes/p;\" | xargs -L1 git checkout -t"
 	show-tracked = "! git log --pretty=format: --name-only --diff-filter=A | sort - | sed '/^$/d'"
 	authors = "! git shortlog -s -n --all --no-merges"
+	who-branch = "!git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' --sort=committerdate"
 #+end_src
 
 * Cleanup local branches if merged to remote
@@ -93,6 +94,6 @@ git branch -vv | grep gone | awk '{print $1}' | xargs git branch -d
 #+end_src
 
 
-* Showing which files has changed between two branches 
+* Showing which files has changed between two branches
 
 git diff --name-status develop-datalake-phase-two develop .
