@@ -26,8 +26,6 @@
                    (abbreviate-file-name (buffer-file-name))
                  "%b"))))
 
-; REGION HIGHLIGHTING COLOUR
-(set-face-attribute 'region nil :background "brown")
 
 ; HIGHLIGHT CURRENT LINE
 (global-hl-line-mode 1)
@@ -39,10 +37,13 @@
 (setq default-frame-alist '((cursor-color . "red")))
 
 (custom-set-faces
-   '(default ((t (:family "Hack" :foundry "unknown" :slant normal :weight normal :height 135 :width normal))))
+   '(default ((t (:family "Hack" :foundry "unknown" :slant normal :weight normal :height 195 :width normal))))
    '(hl-line ((t (:underline nil)))))
 
 ; COLOR THEME
 (load-theme 'wombat t)
+
+; REGION HIGHLIGHTING COLOUR
+(set-face-attribute 'region nil :background "brown")
 
 (provide 'appearance)

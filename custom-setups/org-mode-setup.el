@@ -53,6 +53,7 @@
        ;(concat (getenv "KWORGHOME") "/work/projects/PTD/ptd.org")
        (concat (getenv "KWORGHOME") "/work/projects/PTD/tickets.org")
        (concat (getenv "KWORGHOME") "/work/inbox.org")
+       (concat (getenv "KWORGHOME") "/work/maybe.org")
        (concat (getenv "KWORGHOME") "/work/scheduled.org")
        ;(concat (getenv "KWORGHOME") "/priv/learning/learning-main.org")
        ))
