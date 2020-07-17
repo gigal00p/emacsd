@@ -49,7 +49,7 @@
 
 (setq org-agenda-files
       (list
-       ; (concat (getenv "KWORGHOME") "/work/notki.org")
+       (concat (getenv "KWORGHOME") "/work/notki.org")
        ;(concat (getenv "KWORGHOME") "/work/projects/PTD/ptd.org")
        (concat (getenv "KWORGHOME") "/work/projects/PTD/tickets.org")
        (concat (getenv "KWORGHOME") "/work/inbox.org")

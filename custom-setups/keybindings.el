@@ -30,7 +30,7 @@
 (defalias 'ttl 'toggle-truncate-lines)
 (defalias 'eb 'eval-buffer)
 (defalias 'er 'eval-region)
-
+(defalias 'ib 'ibuffer)
 
 ;;;;;;;;;;; GLOBAL KEYBINDINGS AVAILABLE ONCE PACKAGES GET INSTALLED ;;;;;;;;;;
 ;;; KEY CHORDS ;;;
@@ -116,8 +116,7 @@
   (setq mac-command-modifier 'meta)
   (global-set-key [kp-delete] 'delete-char))
 
-(global-set-key [f8] 'neotree-toggle)
-
+(global-set-key [f12] 'neotree-toggle)
 (global-set-key [M-f8] 'find-directory-in-project-by-selected)
 
 (global-unset-key (kbd "C-c SPC")) ;; previously conf-space-keyword
