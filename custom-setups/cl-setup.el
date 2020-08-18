@@ -1,4 +1,7 @@
-(load (expand-file-name "~/quicklisp/slime-helper.el"))
+; load slime-helper if exists
+(when (load (expand-file-name "~/quicklisp/slime-helper.el") t)
+       ())
+
 (setq inferior-lisp-program "sbcl")
 
 (setq inferior-lisp-program "sbcl --no-sysinit")
@@ -28,5 +31,6 @@
 
 (add-hook 'slime-repl-mode-hook #'paredit-mode)
 
-(load "~/quicklisp/clhs-use-local.el" t)
+(when (load (expand-file-name "~/quicklisp/clhs-use-local.el") t)
+  ())
 (provide 'cl-setup)
