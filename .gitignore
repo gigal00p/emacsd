@@ -32,3 +32,4 @@ workspace
 .emacs.desktop
 .emacs.desktop.lock
 amx-items
+elpy/*

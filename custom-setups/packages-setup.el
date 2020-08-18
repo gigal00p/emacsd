@@ -31,6 +31,8 @@
         magit
         monokai-theme
         move-text              ; move text lines up down
+        modus-operandi-theme
+	modus-vivendi-theme
         multiple-cursors
         neotree
         paredit
@@ -45,6 +47,7 @@
         slime-company
         terraform-mode
         which-key
+        virtualenvwrapper
         yaml-mode
         yasnippet
         yasnippet-snippets))

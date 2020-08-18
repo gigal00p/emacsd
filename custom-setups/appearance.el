@@ -42,8 +42,13 @@
 
 ; COLOR THEME
 (load-theme 'wombat t)
+; (load-theme 'modus-operandi t)          ; Light theme
+; (load-theme 'modus-vivendi t)           ; Dark theme
+
+
 
 ; REGION HIGHLIGHTING COLOUR
 (set-face-attribute 'region nil :background "brown")
+
 
 (provide 'appearance)
