@@ -42,6 +42,8 @@
        (setenv "KWORGHOME" "C:\\Users\\krzysztof\\Documents\\org_projects"))
       ((string= (system-name) "walkiewk-2EFFT0")
        (setenv "KWORGHOME" "/Users/walkiewk/Documents/org"))
+      ((string= (system-name) "demon")
+       (setenv "KWORGHOME" "/home/krzysztof/org"))
       ((string= (system-name) "walkiewk-04JG5H")
        (setenv "KWORGHOME" "/Users/walkiewk/Documents/org")))
 
@@ -58,9 +60,12 @@
        ;(concat (getenv "KWORGHOME") "/priv/learning/learning-main.org")
        ))
 
+(setq kw-org-agenda-file-location-path-string
+      (concat (getenv "KWORGHOME") "/work/inbox.org"))
+
 (setq org-capture-templates
       '(("k" "Various TODO's" entry
-         (file "/Users/walkiewk/Documents/org/work/inbox.org")
+         (file kw-org-agenda-file-location-path-string)
          "\n\n** TODO %?\n   SCHEDULED: %T" 
          :empty-lines 1)))
 
