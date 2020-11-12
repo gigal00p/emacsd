@@ -33,6 +33,7 @@
 (require 'key-chord)
 (require 'multiple-cursors)
 
+
 (after 'clojure-mode
   (require 'clojure-setup))
 
@@ -65,4 +66,5 @@
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 (global-company-mode)
+(require 'terraform-setup)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -15,6 +15,8 @@
         clojure-mode
         clojure-snippets
         company
+        company-terraform
+        company-lsp
         docker
         dracula-theme
         elpy
@@ -28,11 +30,12 @@
         htmlize
         key-chord
         lsp-java
+        lsp-mode
         magit
         monokai-theme
         move-text              ; move text lines up down
         modus-operandi-theme
-	modus-vivendi-theme
+        modus-vivendi-theme
         multiple-cursors
         neotree
         paredit
