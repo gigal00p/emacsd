@@ -42,6 +42,8 @@
        (setenv "KWORGHOME" "C:\\Users\\krzysztof\\Documents\\org_projects"))
       ((string= (system-name) "walkiewk-2EFFT0")
        (setenv "KWORGHOME" "/Users/walkiewk/Documents/org"))
+      ((string= (system-name) "fanless")
+       (setenv "KWORGHOME" "/home/krzysztof/Dokumenty/org"))
       ((string= (system-name) "demon")
        (setenv "KWORGHOME" "/home/krzysztof/org"))
       ((string= (system-name) "walkiewk-04JG5H")
