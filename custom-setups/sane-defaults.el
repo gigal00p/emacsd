@@ -161,4 +161,7 @@
 (require 'which-key)
 (which-key-mode)
 
+(require 'company-terraform)
+(company-terraform-init)
+
 (provide 'sane-defaults)

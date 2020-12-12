@@ -2,11 +2,21 @@
 # name: ptd
 # key: ptd
 # --
-| ENV           | Project ID                     | Project number | Project name                   |
-|---------------+--------------------------------+----------------+--------------------------------|
-| SB            | gred-ptddtalak-sb-001-e4372d8c |   947217532276 | PRJ-RSC-GRED-PTDDATALAK-SB-001 |
-| DEV           | gred-ptddtalak-dev-01-1538c72e |   697222720095 | PRJ-RSC-GRED-PTDDATALAK-DEV-01 |
-| QA            | gred-ptddatalak-qa-01-1d58104e |   972694327014 | PRJ-RSC-GRED-PTDDATALAK-QA-01  |
-| PROD (SB-002) | gred-ptddatalak-sb-02-c68d9a02 |   135433139069 | PRJ-RSC-GRED-PTDDATALAK-SB-02  |
-| ADM           | gred-ptddtalak-adm-01-b14b1f74 |   524253114146 | PRJ-RSC-GRED-PTDDATALAK-ADM-01 |
+|-----------------------+--------------------------------+----------------+--------------------------------|
+| ENV                   | PROJECT ID                     | PROJECT NUMBER | PROJECT NAME                   |
+|-----------------------+--------------------------------+----------------+--------------------------------|
+| SB                    | gred-ptddtalak-sb-001-e4372d8c |   947217532276 | PRJ-RSC-GRED-PTDDATALAK-SB-001 |
+| DEV                   | gred-ptddtalak-dev-01-1538c72e |   697222720095 | PRJ-RSC-GRED-PTDDATALAK-DEV-01 |
+| QA                    | gred-ptddatalak-qa-01-1d58104e |   972694327014 | PRJ-RSC-GRED-PTDDATALAK-QA-01  |
+| PROD (SB-002)         | gred-ptddatalak-sb-02-c68d9a02 |   135433139069 | PRJ-RSC-GRED-PTDDATALAK-SB-02  |
+| ADM                   | gred-ptddtalak-adm-01-b14b1f74 |   524253114146 | PRJ-RSC-GRED-PTDDATALAK-ADM-01 |
+|                       |                                |                |                                |
+|-----------------------+--------------------------------+----------------+--------------------------------|
+| Intelligent authoring | PROJECT ID                     | PROJECT NUMBER | PROJECT NAME                   |
+|-----------------------+--------------------------------+----------------+--------------------------------|
+| SB                    | ptd-intlgtauth-sb-01-2136588a  |   948639586522 | PRJ-RSC-PTD-INTLGTAUTH-SB-01   |
+| DEV                   | ptd-intlgtauth-dev-01-c5882d80 |   878024001219 | PRJ-RSC-PTD-INTLGTAUTH-DEV-01  |
+| QA                    | ptd-intlgtauth-qa-01-9af4aa25  |   471567778192 | PRJ-RSC-PTD-INTLGTAUTH-QA-01   |
+| PROD                  | ptd-intlgtauth-prd-01-de11aa68 |     1232955977 | PRJ-RSC-PTD-INTLGTAUTH-PRD-01  |
+|-----------------------+--------------------------------+----------------+--------------------------------|
 $0
