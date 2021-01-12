@@ -30,5 +30,3 @@
   (require 'go-autocomplete))
 
 (provide 'golang-setup)
-
-

@@ -117,12 +117,11 @@
 (setq display-time-day-and-date t)
 (display-time)
 
-; No splash screen please ... jeez
+; No splash screen
 (setq inhibit-startup-message t)
 
 ; open files in same frame
 (setq ns-pop-up-frames nil)
-
 
 ;; ediff setup
 (require 'ediff)
@@ -141,9 +140,7 @@
 
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 
-
 ;(setq package-check-signature nil)
-
 
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
@@ -161,7 +158,13 @@
 (require 'which-key)
 (which-key-mode)
 
-(require 'company-terraform)
-(company-terraform-init)
+(projectile-mode +1)
+(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
+(global-company-mode)
+
+; mitigation for esup error https://github.com/jschaf/esup/issues/54
+(setq esup-depth 0)
 
 (provide 'sane-defaults)

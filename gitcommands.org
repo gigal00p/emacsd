@@ -57,7 +57,7 @@ git shortlog -s -n --all --no-merges
 
 #+begin_src sh
 [user]
-	email =
+	email = walkiewicz_krzysztof@o2.pl
 	name = Krzysztof Walkiewicz
 
 [core]

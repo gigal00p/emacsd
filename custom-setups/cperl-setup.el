@@ -27,7 +27,6 @@
   (save-excursion ; here we're saving point position before special form is evaluated
   (perl-eval (goto-char (point-min)) (goto-char (point-max))))) ; pass whole buffer to perl-eval and get back to initial point position
 
-
 (after 'cperl-mode
   (define-key cperl-mode-map (kbd "<f9>") 'mark-and-run))
 

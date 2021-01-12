@@ -84,6 +84,7 @@
 
 ;;keep cursor at same position when scrolling
 (setq scroll-preserve-screen-position 1)
+
 ;;scroll window up/down by one line
 (global-set-key (kbd "M-n") (kbd "C-u 1 C-v"))
 (global-set-key (kbd "M-p") (kbd "C-u 1 M-v"))
@@ -110,6 +111,7 @@
 (global-set-key (kbd "M-[") (lambda () (interactive) (other-window -1)))
 
 (global-set-key (kbd "C-c q") 'dired-toogle-read-only)
+(global-set-key (kbd "C-c C-d") 'dired-x-find-file-other-window)
 
 (when (eq system-type 'darwin) ;; mac specific settings
   (setq mac-option-modifier 'alt)
@@ -117,7 +119,6 @@
   (global-set-key [kp-delete] 'delete-char))
 
 (global-set-key [f12] 'neotree-toggle)
-(global-set-key [M-f8] 'find-directory-in-project-by-selected)
 
 (global-unset-key (kbd "C-c SPC")) ;; previously conf-space-keyword
 

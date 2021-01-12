@@ -44,8 +44,8 @@
        (setenv "KWORGHOME" "/Users/walkiewk/Documents/org"))
       ((string= (system-name) "fanless")
        (setenv "KWORGHOME" "/home/krzysztof/Dokumenty/org"))
-      ((string= (system-name) "demon")
-       (setenv "KWORGHOME" "/home/krzysztof/org"))
+      ((string= (system-name) "Latitude-5490")
+       (setenv "KWORGHOME" "/home/krzysztof/Dokumenty/org"))
       ((string= (system-name) "walkiewk-04JG5H")
        (setenv "KWORGHOME" "/Users/walkiewk/Documents/org")))
 

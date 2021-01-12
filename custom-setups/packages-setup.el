@@ -12,11 +12,12 @@
         browse-kill-ring
         counsel
         cider
+        clj-refactor
         clojure-mode
         clojure-snippets
         company
-        company-terraform
-        company-lsp
+        ; company-terraform
+        ; company-lsp
         docker
         dracula-theme
         elpy
@@ -25,12 +26,12 @@
         expand-region
         exec-path-from-shell
         flycheck
+        flycheck-clj-kondo
         go-mode
         go-autocomplete
         htmlize
         key-chord
-        lsp-java
-        lsp-mode
+        ;lsp-mode
         magit
         monokai-theme
         move-text              ; move text lines up down
@@ -39,12 +40,13 @@
         multiple-cursors
         neotree
         paredit
+        password-store
         projectile
         quickrun
         rainbow-delimiters
         rg
         rust-mode
-        scala-mode
+        ; scala-mode
         solarized-theme
         slime
         slime-company
