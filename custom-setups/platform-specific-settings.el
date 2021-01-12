@@ -55,4 +55,13 @@
     '(default ((t (:family "Inconsolata" :foundry "unknown" :slant normal :weight normal :height 135 :width normal))))
     '(hl-line ((t (:underline nil)))))))
 
+(cond (
+       (string= system-type "darwin")
+       (setq dired-use-ls-dired t
+	     insert-directory-program "/usr/local/bin/gls"
+	     dired-listing-switches "-laGh1v --group-directories-first"))
+      ((string= system-type "gnu/linux")
+       (setq dired-use-ls-dired t
+	     dired-listing-switches "-laGh1v --group-directories-first")))
+
 (provide 'platform-specific-settings)

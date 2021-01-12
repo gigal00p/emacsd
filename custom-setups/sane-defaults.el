@@ -38,16 +38,6 @@
 ; dired
 (require 'dired-x)
 (setq dired-dwim-target t)
-
-(cond (
-       (string= system-type "darwin")
-       (setq dired-use-ls-dired t
-	     insert-directory-program "/usr/local/bin/gls"
-	     dired-listing-switches "-laGh1v --group-directories-first"))
-      ((string= system-type "gnu/linux")
-       (setq dired-use-ls-dired t
-	     dired-listing-switches "-laGh1v --group-directories-first")))
-
 (setq dired-recursive-copies 'always)
 (setq dired-recursive-deletes 'always)
 
@@ -91,7 +81,7 @@
 (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 
 ; BROWSE KILL-RING
-(require 'browse-kill-ring)
+; (require 'browse-kill-ring)
 
 (autoload 'markdown-mode "markdown-mode"
   "Major mode for editing Markdown files" t)
@@ -110,7 +100,7 @@
 (set-face-attribute 'show-paren-match nil :foreground "black" :background "#ff3e96")
 (set-face-attribute 'show-paren-match nil :weight 'extra-bold)
 
-(require 'expand-region)
+; (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
 
 (display-time-mode 1)
