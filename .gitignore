@@ -33,3 +33,4 @@ workspace
 .emacs.desktop.lock
 amx-items
 elpy/*
+transient/
