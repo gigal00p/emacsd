@@ -21,12 +21,14 @@
   (when (file-directory-p project)
     (add-to-list 'load-path project)))
 
-; custom setups
+; Initialize path from shell early
+(exec-path-from-shell-initialize)
+(require 'platform-specific-settings)
 (require 'packages-setup)
 (require 'appearance)
 (require 'custom-functions)
 (require 'sane-defaults)
-(require 'platform-specific-settings)
+
 (require 'org-mode-setup)
 (require 'keybindings)
 (require 'key-chord)
@@ -43,4 +45,6 @@
 
 (after 'go-mode
   (require 'golang-setup))
+
+(setq default-directory (getenv "HOME"))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
