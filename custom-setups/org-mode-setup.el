@@ -15,18 +15,18 @@
               ("CANCELLED" :foreground "forest green" :weight bold)
               ("VERIFY" :foreground "DeepPink1" :weight bold))))
 
-(org-babel-do-load-languages
- 'org-babel-load-languages
- '((gnuplot . t)
-   (ditaa . t)
-   (gnuplot . t)
-   (plantuml . t)
-   (dot . t)
-   (sql . t)
-   (perl . t)
-   (calc .t)
-   (R . t)
-   (emacs-lisp . t)))
+;; (org-babel-do-load-languages
+;;  'org-babel-load-languages
+;;  '((gnuplot . t)
+;;    (ditaa . t)
+;;    (gnuplot . t)
+;;    (plantuml . t)
+;;    (dot . t)
+;;    (sql . t)
+;;    (perl . t)
+;;    (calc .t)
+;;    (R . t)
+;;    (emacs-lisp . t)))
 
 ; Do not prompt to confirm evaluation
 ; This may be dangerous - make sure you understand the consequences
@@ -79,14 +79,12 @@
  '(org-level-3 ((t (:foreground "cyan" :bold t))))
  '(org-level-4 ((t (:foreground "pink" :bold t)))))
 
-(global-set-key (kbd "C-c x") 'org-timeline)
-
 (setq org-agenda-start-on-weekday nil)
 
 (setq org-ellipsis "⤵")
 
-(add-to-list 'org-emphasis-alist
-             '("*" (:foreground "yellow")))
+;(add-to-list 'org-emphasis-alist
+;             '("*" (:foreground "yellow")))
 
 ; Fonts in src blocks in babel
 (setq org-src-fontify-natively t)
