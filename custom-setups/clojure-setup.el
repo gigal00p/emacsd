@@ -13,9 +13,6 @@
 ; Configure whether the error buffer with stacktraces should be automatically shown on error:
 (setq cider-show-error-buffer t)
 
-; show port of nrepl connection
-(setq nrepl-buffer-name-show-port t)
-
 ; Prevent C-c C-k from prompting to save the file corresponding to the buffer being loaded, if it's modified:
 (setq cider-prompt-save-file-on-load nil)
 
