@@ -5,9 +5,6 @@
 
 (package-initialize)
 
-; Always prefer newer compilet elc files
-(setq load-prefer-newer t)
-
 ;; Define additional load path
 (setq site-lisp-dir (expand-file-name "site-lisp" user-emacs-directory))
 (setq custom-setups (expand-file-name "custom-setups" user-emacs-directory))
@@ -45,6 +42,4 @@
 
 (after 'go-mode
   (require 'golang-setup))
-
-(setq default-directory (getenv "HOME"))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
