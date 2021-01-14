@@ -1,3 +1,6 @@
+; Always prefer newer compilet elc files
+(setq load-prefer-newer t)
+
 ; Answering just 'y' or 'n' will do
 (defalias 'yes-or-no-p 'y-or-n-p)
 
@@ -40,6 +43,9 @@
 (setq dired-dwim-target t)
 (setq dired-recursive-copies 'always)
 (setq dired-recursive-deletes 'always)
+;; Auto-refresh dired on file change
+(add-hook 'dired-mode-hook 'auto-revert-mode)
+
 
 ; IDO
 (ido-mode t)
