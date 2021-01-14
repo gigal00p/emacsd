@@ -1,7 +1,0 @@
-* CLHS - Common Lisp Hyper Spec
-
-#+begin_src lisp
-(ql:quickload "clhs")
-(clhs:print-emacs-setup-form)
-#+end_src
-
