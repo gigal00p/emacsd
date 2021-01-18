@@ -17,6 +17,7 @@
   (require 'keychain-environment)
   (keychain-refresh-environment)
   (setq system-time-locale "C")
+  (setq magit-git-executable "/usr/local/bin/git")
 
   (setq browse-url-browser-function 'browse-url-default-macosx-browser)
 
