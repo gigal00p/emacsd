@@ -18,6 +18,8 @@
   (keychain-refresh-environment)
   (setq system-time-locale "C")
 
+  (setq browse-url-browser-function 'browse-url-default-macosx-browser)
+
   (setq dired-use-ls-dired t
         insert-directory-program "/usr/local/bin/gls"
         dired-listing-switches "-laGh1v --group-directories-first")

@@ -72,8 +72,8 @@
 
 (set-default 'truncate-lines nil)
 
-(setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "firefox")
+; (setq browse-url-browser-function 'browse-url-generic
+;       browse-url-generic-program "firefox")
 
 (setq browse-url-browser-function (quote browse-url-generic))
 
