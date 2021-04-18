@@ -19,7 +19,7 @@
     (add-to-list 'load-path project)))
 
 ; Initialize path from shell early
-(exec-path-from-shell-initialize)
+; (exec-path-from-shell-initialize)
 (require 'platform-specific-settings)
 (require 'packages-setup)
 (require 'appearance)

@@ -37,7 +37,7 @@
 (setq default-frame-alist '((cursor-color . "red")))
 
 (custom-set-faces
-   '(default ((t (:family "Hack" :foundry "unknown" :slant normal :weight normal :height 145 :width normal))))
+   '(default ((t (:family "Consolas" :foundry "unknown" :slant normal :weight normal :height 145 :width normal))))
    '(hl-line ((t (:underline nil)))))
 
 ; COLOR THEME
