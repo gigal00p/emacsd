@@ -41,8 +41,8 @@
    '(hl-line ((t (:underline nil)))))
 
 ; COLOR THEME
-(load-theme 'wombat t)
-; (load-theme 'modus-operandi t)          ; Light theme
+; (load-theme 'wombat t)
+(load-theme 'modus-operandi t)          ; Light theme
 ; (load-theme 'modus-vivendi t)           ; Dark theme
 
 
